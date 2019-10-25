@@ -4,11 +4,10 @@
   --ts-brand-color: #445277;
   --ts-brand-color-grn: #25dd85;
   --ts-brand-color-dk1: hsl(214, 100%, 17%);
-  --black: 21, 21, 21;
-  --darkgrey: 30, 30, 31;
-  --grey: 46, 46, 47;
-  --lightgrey: 62, 62, 63;
-  --white: 255, 255, 255;
+  --black: #151515;
+  --darkgrey: #1e1e1f;
+  --grey: #2e2e2f;
+  --white: rgb(255, 255, 255);
 }
 
 * {
@@ -2314,6 +2313,7 @@ to {
 .ts-first-launch-login-myts-info .ts-first-launch-login-myts-info-item .ts-first-launch-login-myts-info-item-text {
     display: block !important;
 }
+}
 
 
 .ts-first-launch-terms-conditions-container {
@@ -2459,8 +2459,8 @@ to {
 }
 
 
-.ts-first-launch-beta-badge-container  {
-  background: rgb(var(--grey)) !important;
+.ts-first-launch-beta-badge-container
+background: var(--grey) !important; {
   display: flex;
   flex-direction: column;
 }
