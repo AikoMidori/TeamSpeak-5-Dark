@@ -2740,7 +2740,7 @@ hr {
   top: 0;
   left: var(--tsv-padding-h);
   right: var(--tsv-padding-h);
-  border-top: var(--tsv-separation-border);
+  border-top: 0px !important;
 }
 
 .tsv-bar {
