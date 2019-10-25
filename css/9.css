@@ -2460,7 +2460,7 @@ to {
 
 
 .ts-first-launch-beta-badge-container  {
-  background: var(--grey) !important;
+  background: rgb(var(--grey)) !important;
   display: flex;
   flex-direction: column;
 }
