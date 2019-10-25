@@ -1,0 +1,74 @@
+.tsv-number-picker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tsv-number-picker .tsv-number-picker-button {
+  background: var(--tsv-bg);
+  border-radius: 20px;
+  padding: 0 var(--tsv-padding-v-small);
+  height: 20px;
+}
+.tsv-number-picker .tsv-number-picker-button.disabled {
+  opacity: 0.5;
+}
+.tsv-number-picker .tsv-number-picker-field {
+  margin: 0 var(--tsv-padding-h-small);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tsv-number-picker .tsv-number-picker-field p {
+  font-size: 0.85rem;
+  color: var(--tsv-font-subtitle-color);
+  margin-left: var(--tsv-padding-h-small);
+  min-width: 26px;
+}
+.tsv-number-picker .tsv-number-picker-field .ts-input-number {
+  font-family: monospace;
+  min-width: 5ch;
+}
+.tsv-number-picker .tsv-number-picker-field .ts-input-number input {
+  font-size: 0.9em;
+  text-align: center;
+}
+.tsv-number-picker .tsv-number-picker-field .ts-input-number input[type=number]::-webkit-inner-spin-button,
+.tsv-number-picker .tsv-number-picker-field .ts-input-number input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.ts-debug-settings {
+  padding: 1em;
+}
+.ts-loglevel {
+  margin-bottom: 10px;
+}
+.ts-log {
+  font-size: var(--ts-font-size-body-small);
+  font-family: 'Courier New', Monospace;
+  white-space: nowrap;
+}
+.ts-log-entry {
+  display: flex;
+  flex-direction: column;
+  margin: var(--tsv-padding-v) 0;
+}
+.ts-log-entry.even {
+  background: var(--tsv-bg);
+}
+.ts-log-entry .ts-log-entry-info {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9em;
+  color: var(--tsv-font-subtitle-color);
+}
+.ts-log-entry .ts-log-entry-info .ts-log-entry-divider {
+  width: 20px;
+  text-align: center;
+}
+
+
+
+/*# sourceMappingURL=22.css.map*/

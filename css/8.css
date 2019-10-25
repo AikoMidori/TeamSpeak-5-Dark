@@ -1,0 +1,112 @@
+.ts-input-password-optional-label {
+  color: var(--ts-secondary-font-color);
+}
+
+
+.expandable-input {
+  min-height: 1rem;
+  height: auto;
+  min-width: 40px;
+  width: 100%;
+}
+.expandable-input.editing {
+  outline: none;
+  width: calc(100% - 30px);
+}
+.expandable-input.placeholder {
+  color: var(--tsv-font-subtitle-color);
+}
+.ts-textarea-edit-button {
+  position: absolute;
+  bottom: 3px;
+  right: 8px;
+}
+.ts-textarea-inner {
+  width: 100%;
+  min-height: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: transparent solid 1px;
+  border-radius: var(--tsv-border-radius);
+  user-select: text;
+  position: relative;
+}
+.ts-textarea-inner.padding {
+  padding: var(--tsv-padding-v-small) var(--tsv-padding-h-small);
+}
+.ts-textarea-inner.editing {
+  border: var(--tsv-tint) solid 2px !important;
+}
+.ts-textarea-inner.allowEdit:hover {
+  border: var(--tsv-tint) dashed 2px;
+}
+.ts-textarea-inner .ts-textarea-input-region {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+  resize: none;
+  width: 100%;
+  color: var(--tsv-font-color);
+}
+
+
+.tsv-number-picker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tsv-number-picker .tsv-number-picker-button {
+  background: var(--tsv-bg);
+  border-radius: 20px;
+  padding: 0 var(--tsv-padding-v-small);
+  height: 20px;
+}
+.tsv-number-picker .tsv-number-picker-button.disabled {
+  opacity: 0.5;
+}
+.tsv-number-picker .tsv-number-picker-field {
+  margin: 0 var(--tsv-padding-h-small);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tsv-number-picker .tsv-number-picker-field p {
+  font-size: 0.85rem;
+  color: var(--tsv-font-subtitle-color);
+  margin-left: var(--tsv-padding-h-small);
+  min-width: 26px;
+}
+.tsv-number-picker .tsv-number-picker-field .ts-input-number {
+  font-family: monospace;
+  min-width: 5ch;
+}
+.tsv-number-picker .tsv-number-picker-field .ts-input-number input {
+  font-size: 0.9em;
+  text-align: center;
+}
+.tsv-number-picker .tsv-number-picker-field .ts-input-number input[type=number]::-webkit-inner-spin-button,
+.tsv-number-picker .tsv-number-picker-field .ts-input-number input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.ts-info-edit-server-details[data-v-cb8a5d2a] {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: var(--tsv-padding-v);
+}
+.ts-info-edit-server-details-icon[data-v-cb8a5d2a] {
+  margin: var(--tsv-padding-v) var(--tsv-padding-h) var(--tsv-padding-v) 15px;
+}
+.ts-info-edit-server-details-actual[data-v-cb8a5d2a] {
+  flex: 1;
+}
+
+
+
+/*# sourceMappingURL=8.css.map*/

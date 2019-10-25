@@ -1,0 +1,140 @@
+.ts-keybinds-hotkeys-entry {
+  display: flex;
+  min-height: var(--tsv-row-height);
+  flex-wrap: wrap;
+}
+.ts-keybinds-hotkeys-entry .tsv-button {
+  font-size: var(--tsv-font-size-small);
+}
+.ts-keyginds-btn {
+  width: 1em;
+}
+.ts-keybinds-select {
+  background: transparent;
+  color: var(--tsv-tint2);
+  font-size: var(--tsv-font-size-minimal);
+  border-radius: var(--tsv-border-radius);
+  border: 1px solid transparent;
+  width: 80px;
+  outline: none;
+}
+.ts-keybinds-select:hover {
+  border: 1px solid var(--tsv-tint2);
+}
+.ts-keybinds-hotkeys-entry-descriptor {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  font-size: var(--tsv-font-size);
+  color: var(--tsv-font-color);
+  min-width: 0;
+  min-height: var(--tsv-row-height);
+}
+.ts-keybinds-hotkeys-entry-name {
+  padding-right: var(--tsv-padding-h-small);
+  min-width: 100px;
+}
+.ts-keybinds-hotkeys-entry-value {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--tsv-font-subtitle-color);
+  font-size: var(--tsv-font-size-small);
+  min-height: var(--tsv-row-height);
+  min-width: 100px;
+}
+.ts-keybinds-hotkeys-entry-value span {
+  margin-right: var(--tsv-padding-h-minimal);
+}
+.ts-keybind-hotkeys-entry-actions {
+  min-width: var(--tsv-icon-size);
+}
+.ts-keybinds-hotkeys-entry-additional .ts-keybinds-hotkeys-entry-descriptor {
+  --tsv-icon-base: var(--tsv-font-subtitle-color);
+  font-size: var(--tsv-font-size-small);
+  color: var(--tsv-font-subtitle-color);
+}
+.ts-keybinds-hotkeys-entry-recording .tsv-item-highlight {
+  display: block;
+  box-shadow: 0 0 0 2px var(--tsv-tint);
+}
+.ts-keybinds-hotkeys-entry-recording .ts-keybinds-select {
+  pointer-events: none;
+}
+.ts-keybinds-hidden-input {
+  opacity: 0;
+  position: absolute;
+}
+.ts-keybinds-hotkeys-key {
+  word-spacing: -0.1337em;
+}
+.ts-keybinds-press-any-key,
+.ts-keybinds-empty {
+  color: var(--tsv-font-subtitle-color);
+  font-size: var(--tsv-font-size-minimal);
+}
+.ts-keybinds-press-any-key {
+  color: var(--tsv-tint);
+}
+.ts-keybinds-profile-label {
+  color: var(--tsv-font-subtitle-color);
+  font-size: var(--tsv-font-size-small);
+}
+
+
+.tsv-settings-keybinds-profile-card h6:first-child {
+  margin-bottom: var(--tsv-padding-v-small);
+}
+.tsv-settings-keybinds-profile-card .tsv-settings-keybinds-profile {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: var(--tsv-padding-v-small);
+}
+.tsv-settings-keybinds-profile-card .tsv-settings-keybinds-profile .ts-btn svg {
+  margin-right: 0;
+}
+.ts-keybinds-header {
+  display: flex;
+  justify-content: space-between;
+}
+.ts-keybinds-binds-bind-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1em;
+}
+.ts-keybinds-binds-bind {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  position: relative;
+  flex: 1 1 auto;
+}
+.ts-keybinds-binds-bind:hover .ts-keybinds-binds-bind-delete {
+  visibility: visible;
+}
+.ts-keybinds-binds-bind-action {
+  flex: 1 1 50%;
+  margin-right: 0.5em;
+  box-sizing: content-box;
+}
+.ts-keybinds-binds-bind-input {
+  user-select: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: right;
+}
+.ts-keybinds-binds {
+  overflow-y: auto;
+}
+.ts-keybinds-binds * {
+  user-select: none;
+}
+
+
+
+/*# sourceMappingURL=21.css.map*/

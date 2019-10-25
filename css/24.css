@@ -1,0 +1,77 @@
+.ts-analytics-privacy-mode {
+  width: 40%;
+  margin: 0 var(--tsv-padding-h);
+  background-color: var(--tsv-contrast-bg);
+  border-radius: var(--tsv-border-radius-big);
+  border: 1.5px solid transparent;
+  padding: var(--tsv-padding-v) var(--tsv-padding-v);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.ts-analytics-privacy-mode .ts-analytics-privacy-mode-title {
+  text-align: center;
+  font-family: "TS Gothic";
+  font-size: 1.4rem;
+  width: 100%;
+}
+.ts-analytics-privacy-mode.selected {
+  border: 1.5px solid var(--tsv-tint);
+  --tsv-icon-base: var(--tsv-tint);
+}
+.ts-analytics-privacy-mode ul {
+  padding: var(--tsv-padding-v) var(--tsv-padding-v);
+}
+.ts-analytics-privacy-mode li {
+  font-size: 1rem;
+}
+.ts-analytics-privacy-mode .tsv-icon {
+  margin: var(--tsv-padding-v) auto;
+}
+.ts-analytics-privacy-mode:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 40px -5px var(--tsv-shadow-color);
+}
+
+
+.ts-privacy-picker {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: calc(var(--tsv-padding-v-large) * 2) 0 var(--tsv-padding-v-large) 0;
+}
+.ts-diagnostics-card .ts-btn {
+  margin: var(--tsv-padding-v) auto;
+}
+.ts-diagnostics-card .ts-card-setting-container {
+  margin-top: var(--tsv-padding-v-large);
+}
+.ts-diagnostics-card .ts-card-setting-container.beta-details {
+  text-align: center;
+  font-weight: bold;
+}
+.ts-privacy-panel-extension {
+  display: flex;
+  flex-direction: row;
+  margin-left: var(--tsv-padding-h-small);
+}
+.ts-privacy-panel-extension .ts-privacy-panel-extension-icon {
+  width: 60px;
+}
+.ts-privacy-panel-extension .ts-privacy-panel-extension-icon img,
+.ts-privacy-panel-extension .ts-privacy-panel-extension-icon svg {
+  width: 60px;
+  margin-top: 5px;
+}
+.ts-privacy-panel-extension .ts-privacy-panel-extension-icon p {
+  width: 100%;
+  text-align: center;
+}
+.ts-privacy-panel-extension .ts-privacy-panel-extension-detail {
+  flex: 1 1 auto;
+  margin-left: var(--tsv-padding-h);
+}
+
+
+
+/*# sourceMappingURL=24.css.map*/

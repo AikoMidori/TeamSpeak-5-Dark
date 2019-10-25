@@ -1,0 +1,20 @@
+.ts-info-edit-channel[data-v-d683b896] {
+  contain: layout size;
+  padding: 10px;
+  height: 100%;
+}
+.ts-input-text-resizable[data-v-d683b896] {
+  resize: both;
+}
+.ts-channel-settings-category-headline[data-v-d683b896] {
+  font-size: var(--ts-font-size-body-small);
+  user-select: none;
+}
+.ts-codec-bandwidth[data-v-d683b896] {
+  text-align: center;
+  margin-top: -1px;
+}
+
+
+
+/*# sourceMappingURL=25.css.map*/
