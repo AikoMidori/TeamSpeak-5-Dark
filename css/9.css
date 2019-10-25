@@ -6,6 +6,7 @@
   --ts-brand-color-dk1: hsl(214, 100%, 17%);
   --black: #151515;
   --darkgrey: #1e1e1f;
+  --lightgrey: #121212;
   --grey: #2e2e2f;
   --white: rgb(255, 255, 255);
 }
@@ -3321,7 +3322,7 @@ ul.tsv-list-wrap li.tsv-item {
 :root {
   --ts-chat-background-color: var(--darkgrey) !important;
   --ts-chat-sender-name-color: rgb(225, 225, 225);
-  --ts-chat-message-group-divider-color: #d8d8d81c;
+  --ts-chat-message-group-divider-color: transparent !important;;
   --ts-chat-system-message-text-color: #acacac;
 }
 
@@ -3594,7 +3595,7 @@ a:hover {
 .tsv-sidebar .tsv-bar .tsv-item-highlight,
 .tsv-activity-secondary .tsv-bar .tsv-item-highlight,
 .tsv-dashboard-widget .tsv-bar .tsv-item-highlight {
-  background: var(--grey) !important;
+  background: var(--lightgrey) !important;
 }
 
 .tsv-sidebar .ts-chat-input-container,
