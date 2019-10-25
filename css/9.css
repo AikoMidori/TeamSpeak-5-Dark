@@ -2460,11 +2460,12 @@ to {
 }
 
 
-.ts-first-launch-beta-badge-container
-background: var(--grey) !important; {
+.ts-first-launch-beta-badge-container {
+  background: var(--grey) !important;
   display: flex;
   flex-direction: column;
 }
+
 .ts-first-launch-beta-badge {
   display: flex;
   flex-direction: column;
