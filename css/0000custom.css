@@ -1,0 +1,270 @@
+::-webkit-scrollbar-thumb {
+    background-color: #121212 !important;
+    border-radius: 0px !important;
+}
+
+body {
+    background: #151515 !important;
+}
+
+.main-pane-layout {
+    background: #2e2e2f !important;
+}
+
+.tsv-activity-primary {
+    background: #2e2e2f !important;
+}
+
+.tsv-view {
+    background: #1e1e1f !important;
+}
+
+.tsv-sidebar.tsv-view {
+    background: #151515 !important;
+}
+
+.tsv-sidebar .tsv-view {
+    background: #1e1e1f !important;
+}
+
+.tsv-activity-secondary.tsv-view {
+    background: #151515 !important;
+}
+
+.tsv-activity-secondary .tsv-view {
+    background: #151515 !important;
+}
+
+.tsv-dashboard-widget.tsv-view {
+    background: #2e2e2f !important;
+}
+
+.tsv-dashboard-widget .tsv-view {
+    background: #2e2e2f !important;
+}
+
+.tsv-highlight.tsv-header::before {
+    -webkit-mask: none !important;
+    background: transparent !important;
+}
+
+.tsv-highlight.tsv-header {
+    background: #151515 !important;
+}
+
+.tsv-sidebar .tsv-footer, .tsv-activity-secondary .tsv-footer, .tsv-dashboard-widget .tsv-footer {
+    border-top: 0px !important;
+}
+
+.tsv-sidebar .tsv-footer, .tsv-sidebar .tsv-body>.tsv-bar, .tsv-activity-secondary .tsv-footer, .tsv-activity-secondary .tsv-body>.tsv-bar, .tsv-dashboard-widget .tsv-footer, .tsv-dashboard-widget .tsv-body>.tsv-bar {
+    background: #151515 !important;
+}
+
+.tsv-header {
+    background: #1e1e1f !important;
+    border-bottom: 0px !important;
+}
+
+.tsv-footer {
+    background: #1e1e1f !important; 
+}
+
+.tsv-sidebar .tsv-header, .tsv-activity-secondary .tsv-header, .tsv-dashboard-widget .tsv-header {
+    background: #151515 !important;
+}
+
+.tsv-search-input, .tsv-location-bar, .ts-input {
+    background: #1e1e1f !important;
+}
+
+.tsv-search-input:focus,  .ts-input:focus {
+    outline: none !important;
+    border: none!important;
+}
+
+.tsv-central-toolbar-buttons:before {
+    background: #151515 !important;
+}
+
+.tsv-bar .tsv-segmented-control, .tsv-bar.tsv-segmented-control, .tsv-segmented-button-embedded .tsv-segmented-control, .tsv-segmented-button-embedded.tsv-segmented-control {
+    background: #151515 !important;
+}
+
+.tsv-server-info-grid .tsv-server-info-grid-left {
+    background: transparent !important;
+}
+
+.tsv-server-info-grid .tsv-server-info-grid-item {
+    background: transparent !important;
+}
+
+.tsv-server-info-default-banner {
+    background: #1e1e1f !important;
+}
+
+.ts-background-hexes:before {
+    -webkit-mask: none !important;
+}
+
+.ts-background-hexes-inner {
+    background: transparent !important;
+
+    background: #1e1e1f !important;
+}
+
+.tsv-dashboard-widget-content {
+    background: #151515 !important;
+}
+
+.tsv-dashboard-widget {
+    background: #121212 !important; 
+}
+
+.ts-servertree-sidebar-overlay {
+    box-shadow: none !important;
+}
+
+.ts-servertree-sidebar-overlay .ts-server-tree-item-root {
+    background: #1e1e1f !important;
+}
+
+.tsv-tabs-slim::before {
+    background: #1e1e1f !important;
+}
+
+.tsv-tab-item-active::before {
+    background: #151515 !important;
+}
+
+.tsv-sidebar-header-accessories.background {
+    background: #1e1e1f !important;
+}
+
+.tsv-sidebar .tsv-item-highlight {
+    background: #1e1e1f !important;
+}
+
+.tsv-activity-secondary .tsv-item-highlight {
+    background: #1e1e1f !important;
+}
+
+.tsv-item-highlight {
+    background: #151515 !important;
+}
+
+.ts-server-tree-client-info .ts-server-tree-group-icons {
+    background: #151515 !important;
+}
+
+.ts-server-tree-item-background-image {
+    background: #151515 !important;
+    border-radius: 4px !important;
+}
+
+.tsv-bar-navigation {
+    background: #151515 !important;
+}
+
+.ts-chat-input-container:hover, .ts-chat-input-container.focus {
+    border: 1px solid #1e1e1f !important;
+}
+
+.tsv-sidebar .ts-chat-input-container-content, .tsv-activity-secondary .ts-chat-input-container-content, .tsv-dashboard-widget .ts-chat-input-container-content {
+    background: #1e1e1f !important;
+    border-radius: 20px !important
+}
+
+.tsv-sidebar .ts-chat-input-container, .tsv-activity-secondary .ts-chat-input-container, .tsv-dashboard-widget .ts-chat-input-container {
+    background: #1e1e1f !important;
+    border-radius: 20px !important
+}
+
+.ts-chat-message-system-body {
+    background: #1e1e1f !important;
+}
+
+.ts-chat-message-system-body .ts-chat-message-system-body-icon {
+    display: none !important;
+}
+
+.ts-server-tree-item-node-content .mute-indicator {
+    background: #151515 !important;
+}
+
+.tsv-location-menu-indicator.tsv-active {
+    background: transparent !important;
+}
+
+.ts-chat-input-container {
+    background: #151515 !important;
+    border-radius: 20px !important;
+}
+
+.ts-chat-input-container-content {
+    background: #151515 !important;
+    border-radius: 20px !important;
+}
+
+.tsv-location-navigator {
+    background-color: rgba(54, 54, 54, 0.7) !important;
+    box-shadow: none !important;
+    margin-top: -5px !important;
+    border-radius: 4px !important;
+}
+
+.ts-notifications-center {
+    box-shadow: none !important;
+    background: #1e1e1f !important;
+}
+
+.ts-context-menu, .ts-false-context-menu {
+    background-color: #1e1e1f !important;
+    box-shadow: none !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+.ts-notifications-center .ts-notifications-center-to1, .ts-notifications-center .ts-notifications-center-to2 {
+    border-bottom-color: #1e1e1f !important;
+}
+
+.tsv-sidebar .ts-card, .tsv-activity-secondary .ts-card {
+    background: #1e1e1f !important;
+}
+
+.ts-account-settings-view.tsv-view.tsv-item-view .ts-card {
+    background: #151515 !important;
+}
+
+.tsv-activity-primary .ts-card {
+    background: #151515 !important;
+}
+
+.tsv-modal-overlay {
+    box-shadow: none !important;
+    backdrop-filter: 0px !important;
+}
+
+.tsv-modal-overlay::before {
+    background-color: #1e1e1f !important;
+    opacity: 1 !important;
+}
+
+.ts-text-input-box-inner input {
+    background: #151515 !important;
+}
+
+.ts-input:hover, .ts-input:focus {
+    background: #151515 !important;
+    border: 1px solid #151515 !important;
+    box-shadow: none !important;
+}
+
+.ts-server-tree-item-background-image img {
+    right: -5px !important;
+}
+
+.ts-server-tree-item-background-image .ts-server-tree-item-background-image-blur {
+    border-radius: 4px !important;
+    background: linear-gradient(to right, #121212 25%, #ff000000 100%) !important;
+}
+}
