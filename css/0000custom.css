@@ -1,3 +1,5 @@
+*{box-shadow: none !important;}
+
 ::-webkit-scrollbar-thumb {
     background-color: #121212 !important;
     border-radius: 0px !important;
@@ -50,6 +52,21 @@ body {
 
 .tsv-highlight.tsv-header {
     background: #151515 !important;
+}
+
+.tsv-item-active-indicator::after {
+    border-right-color: #1e1e1f !important;
+}
+
+.tsv-number-picker .tsv-number-picker-button {
+    background: #151515 !important;
+}
+
+.ts-account-badges-active-area.fake-backing {
+    --tsv-icon-channel-bg: #1e1e1f !important;
+    --tsv-icon-channel-shade1: #1e1e1f !important;
+    --tsv-icon-channel-shade2: #1e1e1f !important;
+    --tsv-icon-channel-shade3: #1e1e1f !important;
 }
 
 .tsv-sidebar .tsv-footer, .tsv-activity-secondary .tsv-footer, .tsv-dashboard-widget .tsv-footer {
@@ -217,10 +234,31 @@ body {
     background: #1e1e1f !important;
 }
 
-.ts-context-menu, .ts-false-context-menu {
-    background-color: #1e1e1f !important;
-    box-shadow: none !important;
-    backdrop-filter: blur(20px) !important;
+.ts-context-menu {
+    border-radius: 4px !important;
+    margin-bottom: 10px !important;
+    background-color: #151515 !important;
+}
+
+.ts-talker-requests-list[data-v-6986d3cc] {
+    background: #1e1e1f !important;
+}
+
+.ts-server-events-list {
+    background: #1e1e1f !important;
+}
+
+.ts-create-channel-menu .ts-card[data-v-02fb56e3] {
+    background: #2e2e2f !important;
+}
+
+.ts-graph-layer-background {
+    fill: #1e1e1f !important;
+    stroke: #1e1e1f !important;
+}
+
+.ts-presence-menu.tsv-no-padding {
+    background: #1e1e1f !important;
 }
 
 .ts-notifications-center .ts-notifications-center-to1, .ts-notifications-center .ts-notifications-center-to2 {
@@ -267,4 +305,57 @@ body {
     border-radius: 4px !important;
     background: linear-gradient(to right, #121212 25%, #ff000000 100%) !important;
 }
+
+.ts-analytics-privacy-mode {
+    background-color: #1e1e1f !important;
+}
+
+.multiselect__tags, .multiselect__content-wrapper, .multiselect__option--highlight, .multiselect__input, .multiselect__single, .multiselect__spinner {
+    background: #1e1e1f !important;
+}
+
+.ts-tree-preview-container {
+    background: #1e1e1f !important;
+}
+
+.ts-notification::before {
+    background: #151515eb !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+.ts-notification-widget {
+    border: 1px solid #151515 !important;
+}
+
+.ts-chat-message-attachment .ts-chat-message-attachment-inner {
+    background: #1e1e1f !important;
+    border: 1px solid #1e1e1f !important;
+}
+
+.tsv-server-info-card {
+    background: #1e1e1f !important;
+}
+
+
+
+/* Voice Bulb */
+
+.tsv-icon .tsv-icon-client-voiceless circle, .tsv-icon .tsv-icon-client-voiceless ellipse {
+    fill: #151515 !important;
+}
+
+.tsv-icon .tsv-icon-client-detailed-talking .tsv-icon-tint-fill {
+    fill: var(--tsv-icon-tint) !important;
+}
+
+.tsv-icon .tsv-icon-client-normal circle {
+    fill: #1e1e1f !important;
+}
+
+.tsv-icon .tsv-icon-client-talking circle {
+    fill: white !important;
+}
+
+.tsv-icon-tint-fill {
+    fill: white !important;
 }
