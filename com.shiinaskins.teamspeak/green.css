@@ -1,0 +1,476 @@
+/* colors */
+:root {
+
+    --tsv-main: #121212 !important;
+    --tsv-bg: #151515 !important;
+    --tsv-bg-blur: #15151590 !important;
+    --tsv-bg-extra: #252525 !important;
+    --tsv-bar-bg: var(--tsv-bg) !important;
+    --tsv-shaded-bg: #252525 !important;
+    --tsv-contrast-bg: #252525 !important;
+    --ts-primary-background: var(--tsv-bg) !important;
+    --tsv-header-bg: var(--tsv-bg) !important;
+    --tsv-header-toolbar-bg: var(--tsv-bg) !important;
+    --tsv-tint: var(--green) !important;
+    --tsv-tint2: var(--white) !important;
+    --tsv-icon-tint: var(--green) !important;
+    --tsv-icon-tint2: var(--green) !important;
+    --tsv-separation-border-color: var(--tsv-bg) !important;
+    --tsv-separation-border: var(--tsv-separation-border-width) solid var(--tsv-separation-border-color) !important;
+    --ts-context-menu-background: var(--tsv-shaded-bg) !important;
+    --tsv-context-menu-item-selection: var(--green) !important;
+    --tsv-item-selection: var(--green) !important;
+    --tsv-scrollbar-bg: var(--green) !important;
+    --tsv-control-handle-active-bg: var(--green) !important;
+    --green: #00A86B !important;
+    --white: #ffffff !important;
+    --pastel: #FAF8F6 !important;
+    --red: red !important;
+    --border: var(--green) !important;
+    --settings-card: var(--green) !important;
+    --name-color: var(--white) !important;
+    --text-color: var(--white) !important;
+    --voice: var(--white) !important;
+    --tsv-font-subtitle-color: var(--pastel) !important; /* dark text color */
+    --ts-menu-action-color: var(--white) !important;
+
+}
+
+
+
+
+/* modifications */
+:root {
+
+    --tsv-separation-border-width: 1px !important; /* draggable border width */
+    --tsv-blur: blur(20px) !important; /* blur amount */
+    --tsv-radius: 6px !important; /* custom radius */
+    --tsv-border-radius: 6px !important; /* other borders */
+    --icon-width: 100% !important; /* 10%  default */
+    --bookmarkstab-width: 45% !important; /* 95% default */
+    --bookmarkstab-height: 40px !important; /* 22px default */
+    --serverstab-width: 45% !important; /* 95% default */
+    --serverstab-height: 40px !important; /* 22px default */
+    --tsv-tcbc: var(--red) !important; /* tabs close button color */
+
+}
+
+
+
+
+/* DASHBOARD & SERVERS */
+/* dashboard widgets background */
+.tsv-dashboard-widget-content {
+    background: var(--tsv-bg) !important;
+}
+
+/* draggable sidebar line */
+.tsv-activity-primary {
+    border-left: var(--tsv-separation-border) !important;
+}
+
+/* header blur armount */
+.tsv-floating-background {
+    backdrop-filter: var(--tsv-blur) !important;
+}
+
+/* header bottom border */
+.tsv-header {
+    border-bottom: none !important;
+}
+
+/* header background */
+.tsv-header:before {
+    background: var(--tsv-bg-blur) !important;
+}
+
+/* header opacity fully displayed */
+.tsv-header.tsv-header-floating:before {
+    opacity: 1 !important;
+}
+
+/* header dashboard text background */
+.tsv-header-bar-below-tools:before {
+    background: none !important;
+}
+
+/* widget box border color */
+.tsv-dashboard-widget {
+    background: var(--tsv-bg-extra) !important;
+}
+
+/* widget text border color */
+.ts-widget-section-header .title:before {
+    background: var(--tsv-bg-extra) !important;
+}
+
+/* widget text background color */
+.ts-widget-section-header .title:after {
+    background: var(--tsv-bg) !important;
+}
+
+/* server widgets box backgrounds */
+.tsv-activity-secondary .ts-card, .tsv-sidebar .ts-card {
+    background: transparent !important;
+}
+
+/* remove search bar shadow */
+.ts-input:focus, .ts-input:hover, .tsv-location-bar.tsv-active, .tsv-location-bar:focus, .tsv-search-bar.tsv-active, .tsv-search-bar:focus, .tsv-location-navigator {
+    box-shadow: none !important;
+}
+
+/* blur amount avatar view */
+.tsv-modal-overlay {
+    backdrop-filter: var(--tsv-blur) !important;
+    box-shadow: none !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* remove blur background color avatar view */
+.tsv-modal-overlay:before {
+    background-color: transparent !important;
+}
+
+/* remove border avatar view */
+.ts-lightbox .ts-lightbox-content-basis[data-v-5fb73f40] {
+    border: 0px !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* remove background avatar view */
+.ts-lightbox .ts-lightbox-content-platter[data-v-5fb73f40] {
+    background: none !important;
+}
+
+/* radius avatar */
+.ts-lightbox .ts-lightbox-content-platter .ts-lightbox-content-platter-inner.image img[data-v-5fb73f40] {
+    border-radius: 10px !important;
+    object-fit: cover !important;
+}
+
+/* avatar view close button */
+.ts-lightbox .ts-lightbox-content-platter .ts-lightbox-content-platter-overlay .ts-lightbox-closebox[data-v-5fb73f40] {
+    right: 48% !important;
+    top: 10% !important;
+    background: darkred !important;
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 30px !important;
+}
+
+/* avatar view close button hover */
+.ts-lightbox .ts-lightbox-content-platter .ts-lightbox-content-platter-overlay .ts-lightbox-closebox[data-v-5fb73f40]:hover {
+    box-shadow: 0 0 7px 7px var(--tsv-bg) !important;
+    background: red !important;
+}
+
+/* remove gradient avatar view bottom info and center text */
+.ts-lightbox .ts-lightbox-content-platter .ts-lightbox-content-platter-overlay .ts-lightbox-content-platter-overlay-text[data-v-5fb73f40]{
+    background: none !important;
+    text-align: center !important;
+}
+
+/* center avatar view bottom text */
+.tsv-modal-overlay h5 {
+    text-align: center !important;
+}
+
+/* center avatar view image file type text */
+.ts-lightbox .ts-lightbox-content-footer[data-v-5fb73f40] {
+    padding: 0 !important;
+    margin-left: 50% !important;
+    width: 100% !important;
+}
+
+/* avatar view image file type text color */
+.ts-lightbox .ts-lightbox-content-footer span[data-v-5fb73f40] {
+    color: var(--tsv-tint) !important;
+    margin-left: -10px !important;
+}
+
+/* place the close button image more to the right */
+.ts-lightbox .ts-lightbox-content-platter .ts-lightbox-content-platter-overlay .ts-lightbox-closebox[data-v-5fb73f40] .tsv-icon  {
+    margin-left: 2px !important;
+}
+
+/* remove channel background when selected */
+.ts-server-tree-item-background-image-full {
+    display: none !important;
+}
+
+/* right sidebar client info cards background */
+.tsv-server-info-grid .tsv-server-info-grid-item {
+    background-color: var(--tsv-bg-extra) !important;
+}
+
+/* channel selection bax shadow */
+.ts-server-tree-item-leaf.channel.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.channel.tsv-active .tsv-item-highlight, .ts-server-tree-item-leaf.client.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.client.tsv-active .tsv-item-highlight, .ts-server-tree-item-leaf.spacer.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.spacer.tsv-active .tsv-item-highlight {
+    box-shadow: 0 0 0 1px var(--border) !important;
+}
+
+/* text color */
+.tsv-item-content {
+    color: var(--text-color) !important;
+}
+
+/* channel make menu buttons */
+.tsv-button-filled {
+    background: var(--tsv-bg) !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* channel make menu name input border */
+.ts-text-input-box-inner .ts-input, .ts-text-input-box-inner .ts-input:hover {
+    border: 0px !important;
+}
+
+ /* dark text color */
+.tsv-server-info-footer {
+    color: var(--tsv-font-subtitle-color) !important;
+}
+
+/* dashboard widget content servers margin */
+.tsv-dashboard-widget-content .tsv-no-padding .tsv-item {
+    margin-bottom: 3px !important;}
+
+/* chat messages background */
+.ts-chat-message-system-body[data-v-12e55a26] {
+    background: var(--tsv-bg-extra) !important;
+}
+
+/* chat input active/hover border */
+.ts-chat-input-container.focus, .ts-chat-input-container:hover {
+    border: 1px solid var(--tsv-icon-tint2) !important;
+}
+
+/* border chat input */
+.ts-chat-input-container, .ts-chat-input-container {
+    border: 1px solid var(--tsv-bg) !important;
+}
+
+/* chat input background */
+.tsv-activity-secondary .ts-chat-input-container, .tsv-activity-secondary .ts-chat-input-container-content,
+.tsv-activity-secondary .ts-chat-input-emoji-picker, .tsv-activity-secondary .ts-chat-input-emoji-picker .ts-chat-input-tab.active,
+.tsv-dashboard-widget .ts-chat-input-container, .tsv-dashboard-widget .ts-chat-input-container-content, .tsv-dashboard-widget .ts-chat-input-emoji-picker,
+.tsv-dashboard-widget .ts-chat-input-emoji-picker .ts-chat-input-tab.active, .tsv-sidebar .ts-chat-input-container, .tsv-sidebar .ts-chat-input-container-content,
+.tsv-sidebar .ts-chat-input-emoji-picker, .tsv-sidebar .ts-chat-input-emoji-picker .ts-chat-input-tab.active {
+    background: var(--tsv-bg-extra) !important;
+}
+
+
+
+
+/* SIDEBAR */
+/* client background color */
+.tsv-activity-secondary .tsv-body-background, .tsv-sidebar .tsv-body-background {
+    background: var(--tsv-bg) !important;
+}
+
+/* sidebar header background */
+.tsv-highlight.tsv-header, .tsv-highlight.tsv-header:before {
+    background: none !important;
+}
+
+/* searchbar background */
+.tsv-location-bar, .tsv-search-bar {
+    background: var(--tsv-bg-extra) !important;
+}
+
+/* searchbar input packground */
+.tsv-search-input {
+    background: var(--tsv-bg) !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* sidebar picker background */
+.tsv-tabs-slim:before {
+   background: none !important;
+}
+
+/* sidebar picker selected icon */
+.tsv-tab-item-active:before {
+    top: 0 !important;
+    background: var(--tsv-bg-extra) !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* sidebar picker icon background */
+.tsv-tab-item-active {
+    background: none !important;
+}
+
+/* list item selection color */
+.tsv-item-highlight {
+    background: var(--tsv-item-selection) !important;
+}
+
+/* remove active talking users menu shadow */
+.ts-servertree-sidebar-overlay {
+    box-shadow: none !important;
+}
+
+/* remove active talking users menu background */
+.ts-servertree-sidebar-overlay .ts-server-tree-item-root {
+    background: var(--tsv-main) !important;
+}
+
+/* increase tab width server menu */
+.tsv-tab-item-active {
+    width: var(--icon-width) !important;
+}
+
+/* repositioned the server tabs */
+.bookmarks .tsv-item {
+    display: inline-flex !important;
+    width: var(--bookmarkstab-width) !important;
+    height: var(--bookmarkstab-height) !important;
+    border-radius: var(--tsv-radius) !important;
+    background: #252525 !important;
+    margin-left: 10px !important;
+}
+
+/* server tab hover full highlight */
+.bookmarks .tsv-item:hover {
+    background: var(--tsv-context-menu-item-selection) !important;
+}
+
+/* bookmarks server name repositioned */
+.bookmarks .tsv-item-container {
+    margin-left: -10px !important;
+}
+
+/* hover and selected server tab highlight */
+.tsv-item-highlight, .tsv-item-highlight-extra {
+    bottom: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* reposistioned active servers list tabs */
+.tsv-activity-group-list .tsv-item {
+    width: var(--serverstab-width) !important;
+    height: var(--serverstab-height) !important;
+    margin-left: 10px !important;
+    display: inline-flex !important;
+}
+
+/* active server name repositioned */
+.tsv-activity-group-list .tsv-item-container {
+    margin-left: -10px !important;
+}
+
+
+/* active icon color */
+.tsv-item-active-indicator {
+    border-right-color: var(--tsv-icon-tint) !important;
+}
+
+/* border top the status name */
+.tsv-activity-secondary .tsv-footer, .tsv-dashboard-widget .tsv-footer, .tsv-sidebar .tsv-footer {
+    border-top: 0px !important;
+}
+
+/* contect menu item seperation */
+.ts-context-menu .tsv-item, .ts-false-context-menu .tsv-item {
+    margin-bottom: 3px !important;
+}
+
+/* background tab close color */
+.tsv-activity-group-list .tsv-button-plain:hover {
+    background: var(--tsv-tcbc) !important;
+    border-radius: 20px !important;
+}
+
+
+
+
+
+/* SETTINGS */
+/* settings card backgrounds */
+.ts-account-settings-view .ts-card, .ts-appearance-settings .ts-card, .ts-audio-settings .ts-card, .ts-keybind-settings .ts-card, .ts-notifications-root .ts-card, .ts-whisper-settings .ts-card, .ts-identities-root .ts-card, .ts-apps-settings .ts-card, .ts-privacy-settings-view .ts-card, .ts-about-settings .ts-card {
+    background-color: var(--tsv-bg-extra) !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* setting profile background */
+.tsv-view-banner .tsv-view-background {
+    border-radius: var(--tsv-border-radius) !important;
+    background: var(--tsv-bg) !important;
+    opacity: 1 !important;
+}
+
+/* context menu background */
+.ts-context-menu, .ts-card {
+    background-color: var(--tsv-bg-extra) !important;
+    border: 0px !important;
+}
+
+/* toggle active color */
+.ts-toggle-inner.checked:after {
+    background: var(--tsv-control-handle-active-bg) !important;
+}
+
+/* settings card background */
+.ts-analytics-privacy-mode.selected {
+    background: var(--settings-card) !important;
+    border: 0px !important;
+}
+
+/* settings menu tabs repositioned */
+.tsv-settings-categories .tsv-item {
+    width: 95% !important;
+    margin-left: 10px !important;
+    margin-bottom: 3px !important;
+}
+
+/* settings menu tabs content repositioned */
+.tsv-settings-categories .tsv-item-container {
+    margin-left: -10px !important;
+}
+
+
+
+
+/* VOICE BULB & NAME */
+
+/* name color */
+.ts-server-tree-item-leaf.client, .ts-server-tree-item-leaf.client.self {
+    color: var(--name-color) !important;
+}
+
+/* background bulb color voiceless */
+.tsv-icon .tsv-icon-client-voiceless circle, .tsv-icon .tsv-icon-client-voiceless ellipse {
+    fill: var(--tsv-bg) !important;
+}
+
+/* background bulb color voice */
+.tsv-icon .tsv-icon-client-detailed-talking .tsv-icon-tint-fill {
+    fill: var(--voice) !important;
+}
+
+/* background bulb circle voiceless */
+.tsv-icon .tsv-icon-client-normal circle {
+    fill: var(--tsv-bg) !important;
+}
+
+/* background bulb circle color voice */
+.tsv-icon .tsv-icon-client-talking circle {
+    fill: var(--voice) !important;
+}
+
+/* background bulb circle voice */
+.client .tsv-icon-tint-fill {
+    fill: var(--voice) !important;
+}
+
+
+
+
+/* SCROLLBAR */
+/* scrollbar color */
+::-webkit-scrollbar-thumb {
+    background-color: var(--tsv-scrollbar-bg) !important;
+}

@@ -1,0 +1,38 @@
+{
+    "name": "Shiina's Theme",
+    "description": "Shiina's custom TS5 Theme",
+    "version": "1.0.0",
+    "identifier": "com.shiinaskins.teamspeak",
+    "engines": {
+        "teamspeak": 1
+    },
+    "repository": {
+        "url": "https://github.com/AikoMidori/TeamSpeak-5-Dark",
+        "directory": "css",
+        "type": "git"
+    },
+    "image": "ShiinaC.png",
+    "license": "MIT",
+    "author": {
+        "name": "Shiina",
+        "email": "bryanoort@pm.me",
+        "url": "https://shiinaskins.com",
+        "userTag": "Shiina@tschat-1.teamspeak.com"
+    },
+    "content": {
+        "themes": [
+            {
+                "name": "Dark Theme Purple",
+                "source": "purple.css",
+                "image": "purpletheme.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "Dark Theme Green",
+                "source": "green.css",
+                "image": "greentheme.png",
+                "apiVersion": 1
+            }
+        ]
+    }
+}
