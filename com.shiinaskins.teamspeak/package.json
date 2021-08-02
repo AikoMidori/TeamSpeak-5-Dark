@@ -8,11 +8,11 @@
     },
     "repository": {
         "url": "https://github.com/AikoMidori/TeamSpeak-5-Dark",
-        "directory": "css",
+        "directory": "com.shiinaskins.teamspeak",
         "type": "git"
     },
     "image": "ShiinaC.png",
-    "license": "MIT",
+    "license": "CC BY-SA",
     "author": {
         "name": "Shiina",
         "email": "bryanoort@pm.me",
