@@ -22,6 +22,9 @@
     --tsv-context-menu-item-selection: var(--green1) !important;
     --tsv-item-selection: var(--green1) !important;
     --tsv-control-handle-active-bg: var(--green1) !important;
+    --tsv-chat-remote-bg: var(--arctic1) !important;
+    --tsv-chat-self-bg: var(--arctic1) !important;
+    --tsv-chat-deleted-bg: var(--arctic1) !important;
     --gradient: linear-gradient(var(--alpine) ,var(--pastel));
     --green: #00A86B !important;
     --green1: #00A86B20 !important;
@@ -115,6 +118,23 @@
     filter: var(--imageblur) !important;
     display: var(--customchatbg) !important;
     margin-left: 20px !important;
+}
+
+/* set custom background detailed chat boxes */
+.ts-chat-room-event-detailed .ts-chat-room-event-bubble {
+    box-shadow: var(--hard-shadow) !important;
+    margin-bottom: 2px !important;
+}
+
+/* set custom background detailed chat boxes */
+.ts-chat-room-event-detailed.ownclient .ts-chat-room-event-bubble:not(.deleted) {
+    box-shadow: var(--hard-shadow) !important;
+    margin-bottom: 2px !important;
+}
+
+/* set custom background detailed chat boxes */
+.ts-chat-message-system-body[data-v-113095de] {
+    background: var(--arctic1) !important;
 }
 
 /* dashboard widgets background */
