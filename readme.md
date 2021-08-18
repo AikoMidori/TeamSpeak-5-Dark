@@ -34,7 +34,8 @@ First things first, you're going to need a IDE to open the files with. I recomme
 <h2>Default TS5 Background</h2>
 
 This is the default TeamSpeak client background, it has been turned off because we are using another image.
->--defaultbg: none !important; /* default background img */
+
+    --defaultbg: none !important; /* default background img */
 
 If you want to turn it on, please turn off the custombg first.
 Change `none` to `flex`
@@ -44,7 +45,8 @@ ___
 
 <h2>Custom Background</h2>
 
-This is the image used for client background/
+This is the image used for client background.
+
     --custombg: url(./girl_green.png) !important; /* custom background img */
 
 If you want to turn it off, simply add `/*` at the start of the line.
