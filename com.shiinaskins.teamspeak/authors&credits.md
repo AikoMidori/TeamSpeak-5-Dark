@@ -19,17 +19,24 @@ Twitter: twitter/nanna_fujimi
 skeb: https://skeb.jp/@nanna_fujimi
 piciv: https://www.pixiv.net/en/artworks/43006990
 
+--
 
 girl_green.png
 
 Yuki Shimao - 島緒ユキ
 https://www.pixiv.net/en/artworks/79468672
 
+--
 
 ShiinaC.png
 
-Caedoll
-Email: caedoll.comms@gmail.com
+Caedoll Email: caedoll.comms@gmail.com
 Instgram: https://www.instagram.com/cae.draws/
-Pixiv: pixiv.me/caedoll
-Twitter: twitter/caedoll
+Pixiv: pixiv.me/caedoll Twitter: twitter/caedoll
+
+--
+
+W11LightDark.png
+
+Shiina - Bryan Oort
+Email: bryanoort@protonmail.me

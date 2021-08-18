@@ -11,17 +11,21 @@
     --tsv-bar-bg: var(--tsv-bg) !important;
     --tsv-shaded-bg: var(--arctic1) !important;
     --tsv-contrast-bg: var(--arctic1) !important;
-    --tsv-header-toolbar-bg: var(--transparent) !important;
+    --tsv-header-toolbar-bg: var(--tsb-bg) !important;
     --tsv-tint: var(--green) !important;
     --tsv-tint2: var(--white) !important;
     --tsv-icon-tint: var(--green) !important;
     --tsv-icon-tint2: var(--green) !important;
-    --tsv-separation-border-color: var(--transparent) !important;
+    --tsv-separation-border-color: var(--tsv-bg) !important;
     --tsv-separation-border: var(--tsv-separation-border-width) solid var(--tsv-separation-border-color) !important;
     --ts-context-menu-background: var(--tsv-shaded-bg) !important;
     --tsv-context-menu-item-selection: var(--green1) !important;
     --tsv-item-selection: var(--green1) !important;
     --tsv-control-handle-active-bg: var(--green1) !important;
+    --tsv-chat-remote-bg: var(--arctic1) !important;
+    --tsv-chat-self-bg: var(--pastel) !important;
+    --tsv-chat-deleted-bg: var(--arctic1) !important;
+    --ts-select-bg: var(--arctic) !important;
     --gradient: linear-gradient(var(--pastel) ,var(--alpine));
     --green: #00A86B !important;
     --green1: #00A86B70 !important;
@@ -30,6 +34,7 @@
     --pastel: #2e2e2f !important;
     --pastel1: #15151550 !important;
     --alpine: #121212 !important;
+    --alpine1: #12121250 !important;
     --snow: #e7f8f8 !important;
     --arctic: #3e3e3f !important;
     --arctic1: #3e3e3f90 !important;
@@ -40,8 +45,8 @@
     --name-color: var(--white) !important;
     --text-color: var(--white) !important;
     --voice: var(--white) !important;
-    --voice2: var(--alpine) !important;
-    --voicemenu: var(--pastel) !important;
+    --voice1: var(--pastel) !important;
+    --voicemenu: var(--arctic1) !important;
     --tsv-font-subtitle-color: var(--white) !important; /* dark text color */
     --ts-menu-action-color: var(--white) !important;
     --permissions-card: var(--arctic1) !important;
@@ -54,11 +59,10 @@
     --emojibg: var(--pastel) !important;
     --chatbox: var(--arctic1) !important;
     --chatinput: var(--arctic1) !important;
+    --headerbg: var(--transparent) !important;
+    --headerblur: blur(20px) !important;
 
 }
-
-
-
 
 /* modifications */
 :root {
@@ -73,15 +77,17 @@
     --serverstab-width: 45% !important; /* 95% default */
     --serverstab-height: 40px !important; /* 22px default */
     --tsv-tcbc: var(--red) !important; /* tabs close button color */
-    --soft-shadow: 0px 0px 10px 1px #02020220 !important; /* shadows */
     --hard-shadow: 0px 0px 7px 1px #02020230 !important; /* shadows */
+    --soft-shadow: 0px 0px 10px 1px #02020220 !important; /* shadows */
+    --channel-shadow: 0px 2px 5px 1px #02020230 !important; /* channels shadows */
     --menu-shadow: 0px 0px 10px 1px #02020240 !important; /* menu shadows */
+
+
 
     --defaultbg: none !important; /* default background img */
     --custombg: url(./girl_green.png) !important; /* custom background img */
-    --customchatbg: flex !important; /* chat custom background img */
-    --imgblur: blur(20px) !important; /* blur the chat custom background img */
-    --grayscale: grayscale(20%) !important; /* darken the img */
+    --customchatbg: none !important; /* chat custom background img */
+    --imageblur: blur(50px) !important; /* blur the chat custom background img */
 
 }
 
@@ -95,6 +101,30 @@
     background: var(--tsv-bg) !important;
 }
 
+/* change the width and position of channels */
+.main-pane-layout .vue-recycle-scroller.ready.direction-vertical .vue-recycle-scroller__item-view {
+    width: 95% !important;
+    margin-left: 5px !important;
+}
+
+/* changed the width of channel image */
+.main-pane-layout .ts-server-tree-item-background-image, .ts-server-tree-item-background-image-full, .ts-server-tree-item-background-no-image {
+    left: 0 !important;
+    right: 0 !important;
+}
+
+/* client info repositioned */
+.ts-server-tree-client-info.expanded .ts-server-tree-group-icons {
+    margin-bottom: 2px !important;
+}
+
+/* client highight height changed */
+.main-pane-layout .ts-server-tree-item-leaf.client .tsv-item-highlight {
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+}
+
+
 /* hide default hexes background */
 .tsv-background-canvas.fancy {
     display: var(--defaultbg) !important;
@@ -104,14 +134,30 @@
 .ts-background-hexes-container {
     background: var(--custombg) !important;
     background-size: cover !important;
-    filter: var(--grayscale) !important;
 }
 
 /* set custom background behind the chat blurred */
 .ts-chat-container .ts-background-hexes-container {
-    filter: var(--imgblur) !important;
+    filter: var(--imageblur) !important;
     display: var(--customchatbg) !important;
     margin-left: 20px !important;
+}
+
+/* set custom background detailed chat boxes */
+.ts-chat-room-event-detailed .ts-chat-room-event-bubble {
+    box-shadow: var(--hard-shadow) !important;
+    margin-bottom: 2px !important;
+}
+
+/* set custom background detailed chat boxes */
+.ts-chat-room-event-detailed.ownclient .ts-chat-room-event-bubble:not(.deleted) {
+    box-shadow: var(--hard-shadow) !important;
+    margin-bottom: 2px !important;
+}
+
+/* set custom background detailed chat boxes */
+.ts-chat-message-system-body[data-v-113095de] {
+    background: var(--arctic1) !important;
 }
 
 /* dashboard widgets background */
@@ -126,7 +172,7 @@
 
 /* header blur armount */
 .tsv-floating-background {
-    backdrop-filter: var(--tsv-blur) !important;
+    backdrop-filter: var(--headerblur) !important;
 }
 
 /* header bottom border */
@@ -150,6 +196,10 @@
     background: var(--settings-card) !important;
     backdrop-filter: var(--tsv-blur) !important;
     box-shadow: var(--hard-shadow) !important;
+}
+
+.ts-widget-section-header {
+    z-index: 0 !important;
 }
 
 /* widget text title background */
@@ -266,7 +316,7 @@
 
 /* channel selection box shadow */
 .ts-server-tree-item-leaf.channel.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.channel.tsv-active .tsv-item-highlight, .ts-server-tree-item-leaf.client.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.client.tsv-active .tsv-item-highlight, .ts-server-tree-item-leaf.spacer.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.spacer.tsv-active .tsv-item-highlight {
-    box-shadow: var(--soft-shadow) !important;
+    box-shadow: var(--channel-shadow) !important;
 }
 
 /* text color */
@@ -289,19 +339,14 @@
 /* self status footer */
 .tsv-footer:before {
     background: var(--transparent) !important;
-    backdrop-filter: var(--tsv-blur) !important;
+    backdrop-filter: none !important;
 }
 
 /* footer color */
 .tsv-footer {
     border-top: 0px !important;
-    backdrop-filter: var(--tsv-blur) !important;
+    backdrop-filter: none !important;
     background: var(--transparent) !important;
-}
-
- /* dark text color */
-.tsv-server-info-footer {
-    color: var(--tsv-font-subtitle-color) !important;
 }
 
 /* dashboard widget content servers margin */
@@ -348,15 +393,15 @@
     backdrop-filter: var(--tsv-blur) !important;
 }
 
-/* second blurred header background */
-.tsv-activity-secondary .tsv-header.tsv-header-floating:before {
-    background: var(--transparent) !important;
-    backdrop-filter: var(--tsv-blur) !important;
+.tsv-activity-secondary .tsv-header.tsv-header-floating, .tsv-dashboard-widget .tsv-header.tsv-header-floating, .tsv-sidebar .tsv-header.tsv-header-floating {
+    background: var(--headerbg) !important;
+    backdrop-filter: var(--headerblur) !important;
 }
 
 /* blur the header */
 .tsv-dashboard-widget .tsv-header.tsv-header-floating, .tsv-sidebar .tsv-header.tsv-header-floating, .tsv-header:before, .tsv-activity-secondary .tsv-header:before, .tsv-dashboard-widget .tsv-header:before, .tsv-sidebar .tsv-header:before {
-    background: var(--transparent) !important;
+    background: var(--headerbg) !important;
+    backdrop-filter: var(--headerblur) !important;
 
 }
 
@@ -405,6 +450,7 @@
     border-bottom-color: var(--tsv-tint) !important;
 }
 
+/* ??? */
 .tsv-server-info-topic-banner .ts-text-input-box-inner.hideDisclosure .ts-input {
     background: var(--transparent) !important;
 }
@@ -416,7 +462,7 @@
     border-radius: var(--tsv-border-radius) !important;
     box-shadow: var(--hard-shadow) !important;
     width: 70% !important;
-    height: 5% !important;
+    height: auto !important;
     color: var(--textcolor) !important;
 }
 
@@ -439,6 +485,18 @@
 .ts-chat-room-event-compact .ts-chat-message-attachment {
     margin-top: 10px !important;
 }
+
+/* widget ts card backgroud transprancy */
+.ts-widget, .tsv-dashboard-widget .ts-card {
+    background: var(--transparent) !important;
+}
+
+/* custom server text */
+.tsv-server-info-grid-left .ts-textarea-inner {
+    background: var(--title) !important;
+    box-shadow: var(--hard-shadow) !important;
+}
+
 
 
 
@@ -510,9 +568,8 @@
 
 /* rework active talking users menu shadow */
 .ts-servertree-sidebar-overlay {
-    box-shadow: none !important;
+    box-shadow: var(--hard-shadow) !important;
     border-bottom: 1px solid var(--tsv-tint) !important;
-    background: var(--transparent) !important;
 }
 
 /* rework active talking users menu background */
@@ -572,8 +629,8 @@
 /* border top the status name */
 .tsv-activity-secondary .tsv-footer, .tsv-dashboard-widget .tsv-footer, .tsv-sidebar .tsv-footer {
     border-top: 0px !important;
-    background: var(--transparent) !important;
-    backdrop-filter: var(--tsv-blur) !important;
+    background: var(--pastel1) !important;
+    backdrop-filter: none !important;
 }
 
 /* contect menu item seperation */
@@ -651,6 +708,11 @@
     background: var(--title) !important;
 }
 
+/* background selection buttons */
+.ts-card-setting-container .tsv-segmented-control {
+    background: var(--settings-card) !important;
+}
+
 /* create button opacity permissions cards header background */
 .navigationRow.top .tsv-button.tsv-is-constructive {
     opacity: 1 !important;
@@ -666,12 +728,12 @@
     background: radial-gradient(circle, rgba(44,255,178,1) 0%, rgba(55,88,187,1) 100%) !important;
 }
 
-/* settings button import */
+/* settings background colored */
 .ts-identities-root .ts-widget-container .tsv-clearance-small .tsv-button-plain {
     background: var(--settings-card) !important;
     backdrop-filter: var(--tsv-blur) !important;
     border-radius: var(--tsv-border-radius) !important;
-    height: 30px !important;
+    height: 60px !important;
     width: 30% !important;
 }
 
@@ -779,6 +841,11 @@
     display: none !important;
 }
 
+/* small +/- button colors */
+.tsv-number-picker .tsv-number-picker-button {
+    background: var(--title) !important;
+}
+
 
 
 /* VOICE BULB & NAME */
@@ -788,9 +855,10 @@
     color: var(--name-color) !important;
 }
 
+
 /* background bulb color voiceless */
 .tsv-icon .tsv-icon-client-voiceless circle, .tsv-icon .tsv-icon-client-voiceless ellipse {
-    fill: var(--voice2) !important;
+    fill: var(--voice1) !important;
 }
 
 /* background bulb color voice */
@@ -800,7 +868,7 @@
 
 /* background bulb circle voiceless */
 .tsv-icon .tsv-icon-client-normal circle {
-    fill: var(--voice2) !important;
+    fill: var(--voice1) !important;
 }
 
 /* background bulb circle color voice */
