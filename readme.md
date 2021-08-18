@@ -2,9 +2,9 @@
 
 <h1>Instructions</h1>
 
-<h2>Instructions</h2>
+<h2>Installation</h2>
 
-Download the file as zip from githib end extract the folder to:
+Download the file as zip from github and extract the folder to:
 `%AppData%/TeamSpeak/Default/extensions`
 
 When that's done, open the TeamSpeak 5 client and navigate
