@@ -103,14 +103,27 @@
 
 /* change the width and position of channels */
 .main-pane-layout .vue-recycle-scroller.ready.direction-vertical .vue-recycle-scroller__item-view {
-    width: 95% !important;
+    width: 100% !important;
     margin-left: 5px !important;
 }
 
 /* changed the width of channel image */
-.main-pane-layout .ts-server-tree-item-background-image, .ts-server-tree-item-background-image-full, .ts-server-tree-item-background-no-image {
+.main-pane-layout .ts-server-tree-item-background-image, .ts-server-tree-item-background-image-full {
     left: 0 !important;
     right: 0 !important;
+}
+
+/* remove image channel tree */
+.ts-server-tree-item-background-no-image {
+    background: var(--arctic) !important;
+    width: auto !important;
+}
+
+/* active server channel hover and selected */
+.ts-server-tree-item-leaf.channel.tsv-active .tsv-item-highlight, .main-pane-layout .tsv-item-highlight {
+    background: var(--tabs-active) !important;
+    box-shadow: var(--channel-shadow) !important;
+    border-radius: var(--tsv-radius) !important;
 }
 
 /* client info repositioned */
@@ -180,6 +193,11 @@
     border-bottom: 0px !important;
 }
 
+/* remove mute buttons background */
+.tsv-central-toolbar-buttons:before {
+    background: transparent !important;
+}
+
 /* top tool bar header transparent */
 .tsv-header-bar-below-tools:before {
     opacity: 0 !important;
@@ -198,6 +216,7 @@
     box-shadow: var(--hard-shadow) !important;
 }
 
+/* widget section */
 .ts-widget-section-header {
     z-index: 0 !important;
 }
@@ -315,8 +334,13 @@
 }
 
 /* channel selection box shadow */
-.ts-server-tree-item-leaf.channel.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.channel.tsv-active .tsv-item-highlight, .ts-server-tree-item-leaf.client.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.client.tsv-active .tsv-item-highlight, .ts-server-tree-item-leaf.spacer.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.spacer.tsv-active .tsv-item-highlight {
+.ts-server-tree-item-leaf.channel.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.client.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.client.tsv-active .tsv-item-highlight, .ts-server-tree-item-leaf.spacer.tsv-active .ts-server-tree-item-background-image, .ts-server-tree-item-leaf.spacer.tsv-active .tsv-item-highlight {
     box-shadow: var(--channel-shadow) !important;
+}
+
+.ts-server-tree-item-background-image {
+    width: 96% !important;
+    margin-left: 8px !important;
 }
 
 /* text color */
@@ -339,13 +363,13 @@
 /* self status footer */
 .tsv-footer:before {
     background: var(--transparent) !important;
-    backdrop-filter: none !important;
+    backdrop-filter: var(--tsv-blur) !important;
 }
 
 /* footer color */
 .tsv-footer {
     border-top: 0px !important;
-    backdrop-filter: none !important;
+    backdrop-filter: var(--tsv-blur) !important;
     background: var(--transparent) !important;
 }
 
@@ -393,6 +417,7 @@
     backdrop-filter: var(--tsv-blur) !important;
 }
 
+/* widgets */
 .tsv-activity-secondary .tsv-header.tsv-header-floating, .tsv-dashboard-widget .tsv-header.tsv-header-floating, .tsv-sidebar .tsv-header.tsv-header-floating {
     background: var(--headerbg) !important;
     backdrop-filter: var(--headerblur) !important;
@@ -466,10 +491,28 @@
     color: var(--textcolor) !important;
 }
 
-/* permissions search box */
+/* remove overlapping shadows and colors */
 .ts-text-input-box-inner.hideDisclosure .ts-input {
-    background: var(--context-menu) !important;
-    box-shadow: var(--soft-shadow) !important;
+    background: var(--transparent) !important;
+    box-shadow: none !important;
+}
+
+/* navigationbat permissions search */
+.tsv-bar.tsv-navigation-bar .ts-text-input-box-inner.hideDisclosure .ts-input {
+    background: var(--arctic) !important;
+    box-shadow: var(--hard-shadow) !important;
+}
+
+/* create channel text input */
+.ts-create-channel-details-actual .ts-text-input-box-inner.hideDisclosure .ts-input {
+    background: var(--arctic) !important;
+    box-shadow: var(--hard-shadow) !important;
+}
+
+/* create channel buttons */
+.ts-create-channel-menu-buttons .tsv-button-filled {
+    background: var(--arctic) !important;
+    box-shadow: var(--hard-shadow) !important;
 }
 
 /* chatbox attachments background */
@@ -497,6 +540,12 @@
     box-shadow: var(--hard-shadow) !important;
 }
 
+/* banned or kicked message */
+.ts-server-kicked-message-container[data-v-9ab8535e], .ts-server-kicked-message-container[data-v-9ab8535e]::before {
+    border: 0px !important;
+    border-radius: var(--tsv-border-radius) !important;
+}
+
 
 
 
@@ -512,6 +561,11 @@
 .tsv-sidebar .tsv-header-backdrop, .tsv-window, .main-pane-layout, .tsv-highlight.tsv-header, .tsv-highlight.tsv-header:before {
     background-image: var(--transparent) !important;
     background: var(--transparent) !important;
+}
+
+/* remove create bookmarks and folder background */
+.tsv-sidebar-header-accessories.background {
+    background: transparent !important;
 }
 
 /* notification icon color */
@@ -595,7 +649,7 @@
 }
 
 /* hover and selected server tab highlight */
-.tsv-item-highlight, .tsv-item-highlight-extra {
+.sidebar-pane-layout .tsv-item-highlight, .tsv-item-highlight-extra {
     background: var(--tabs-active) !important;
     bottom: 0 !important;
     top: 0 !important;
@@ -629,8 +683,8 @@
 /* border top the status name */
 .tsv-activity-secondary .tsv-footer, .tsv-dashboard-widget .tsv-footer, .tsv-sidebar .tsv-footer {
     border-top: 0px !important;
-    background: var(--pastel1) !important;
-    backdrop-filter: none !important;
+    background: var(--transparent) !important;
+    backdrop-filter: var(--tsv-blur) !important;
 }
 
 /* contect menu item seperation */
@@ -648,6 +702,12 @@
 .tsv-bar.tsv-segmented-control, .tsv-bar .tsv-segmented-control, .tsv-segmented-button-embedded.tsv-segmented-control, .tsv-segmented-button-embedded .tsv-segmented-control {
     box-shadow: var(--hard-shadow) !important;
     background: var(--tabs-colors) !important;
+}
+
+/* server info text */
+.tsv-server-info-grid .tsv-server-info-grid-left {
+    padding-left: 5px !important;
+    padding-top: 5px !important;
 }
 
 /* tab selected arrow color */
@@ -713,11 +773,25 @@
     background: var(--settings-card) !important;
 }
 
+/* color selection buttons */
+.tsv-segmented-control {
+    background: var(--alpine) !important;
+}
+
 /* create button opacity permissions cards header background */
 .navigationRow.top .tsv-button.tsv-is-constructive {
     opacity: 1 !important;
 }
 
+/* open external link website background */
+.ts-external-url-warning-container[data-v-2d323585] {
+    background: var(--arctic1) !important;
+}
+
+/* open external link checkbox color */
+.ts-checkbox .ts-checkbox-inner .ts-checkbox-background {
+    background: var(--arctic1) !important;
+}
 
 
 
@@ -735,6 +809,53 @@
     border-radius: var(--tsv-border-radius) !important;
     height: 60px !important;
     width: 30% !important;
+}
+
+/* settings dropdown effect fix */
+.multiselect__content-wrapper {
+    position: inherit !important;
+    border-radius: var(--tsv-radius) !important;
+    margin-top: 5px !important;
+    background: var(--tsv-bg-blur) !important;
+    box-shadow: var(--hard-shadow) !important;
+    backdrop-filter: var(--tsv-blur) !important;
+    transition: 0s ease-in-out !important;
+}
+
+/* settings dropdown effect fix */
+.multiselect {
+    background: transparent !important;
+}
+
+/* settings dropdown effect fix */
+.multiselect__input, .multiselect__single {
+    background: transparent !important;
+}
+
+/* settings dropdown effect fix */
+.multiselect__tags {
+    backdrop-filter: var(--tsv-blur) !important;
+    background: var(--tsv-bg-blur) !important;
+    box-shadow: var(--hard-shadow) !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* settings dropdown effect fix */
+.multiselect__tags:hover {
+    backdrop-filter: var(--tsv-blur) !important;
+    background: var(--tsv-context-menu-item-selection) !important;
+    box-shadow: var(--hard-shadow) !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* settings slider border removal */
+.ts-slider .ts-slider-track.overlay {
+    background: transparent !important;
+}
+
+/* settings slider background color */
+.ts-slider-segment-placeholder {
+    background: var(--arctic) !important;
 }
 
 /* settings card backgrounds */

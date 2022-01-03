@@ -1,5 +1,5 @@
 /* colors */
-*{color: black !important;}
+*{color: white !important;}
 
 :root {
 
@@ -12,43 +12,47 @@
     --tsv-shaded-bg: var(--arctic1) !important;
     --tsv-contrast-bg: var(--arctic1) !important;
     --tsv-header-toolbar-bg: var(--tsv-bg) !important;
-    --tsv-tint: var(--purple) !important;
-    --tsv-tint2: var(--black) !important;
-    --tsv-icon-tint: var(--purple) !important;
-    --tsv-icon-tint2: var(--purple) !important;
+    --tsv-tint: var(--green) !important;
+    --tsv-tint2: var(--white) !important;
+    --tsv-icon-tint: var(--green) !important;
+    --tsv-icon-tint2: var(--green) !important;
     --tsv-separation-border-color: var(--tsv-bg) !important;
     --tsv-separation-border: var(--tsv-separation-border-width) solid var(--tsv-separation-border-color) !important;
     --ts-context-menu-background: var(--tsv-shaded-bg) !important;
-    --tsv-context-menu-item-selection: var(--purple1) !important;
-    --tsv-item-selection: var(--purple1) !important;
-    --tsv-control-handle-active-bg: var(--purple1) !important;
-    --gradient: linear-gradient(var(--alpine) ,var(--pastel));
-    --purple: #6624e2 !important;
-    --purple1: #6624e220 !important;
+    --tsv-context-menu-item-selection: var(--green1) !important;
+    --tsv-item-selection: var(--green1) !important;
+    --tsv-control-handle-active-bg: var(--green1) !important;
+    --tsv-chat-remote-bg: var(--arctic1) !important;
+    --tsv-chat-self-bg: var(--pastel) !important;
+    --tsv-chat-deleted-bg: var(--arctic1) !important;
+    --ts-select-bg: var(--arctic) !important;
+    --gradient: linear-gradient(var(--pastel) ,var(--alpine));
+    --green: #00A86B !important;
+    --green1: var(--transparent) !important;
     --white: #ffffff !important;
     --black: #000000 !important;
-    --pastel: #cfd0d3 !important;
-    --pastel1: #cfd0d350 !important;
-    --alpine: #cfd9d9 !important;
-    --alpine1: #cfd9d950 !important;
-    --snow: #e7f8f8 !important;
-    --arctic: #e3e9e9 !important;
-    --arctic1: #e3e9e990 !important;
+    --pastel: #2e2e2f !important;
+    --pastel1: transparent !important;
+    --alpine: #121212 !important;
+    --alpine1: transparent !important;
+    --snow: transparent !important;
+    --arctic: transparent !important;
+    --arctic1: transparent !important;
     --red: red !important;
-    --border: var(--purple1) !important;
-    --privacy-card: var(--purple) !important;
+    --border: var(--green1) !important;
+    --privacy-card: var(--green) !important;
     --settings-card: var(--arctic1) !important;
-    --name-color: var(--black) !important;
-    --text-color: var(--black) !important;
-    --voice: var(--black) !important;
+    --name-color: var(--whitek) !important;
+    --text-color: var(--white) !important;
+    --voice: var(--white) !important;
     --voice1: var(--alpine) !important;
     --voicemenu: var(--arctic1) !important;
-    --tsv-font-subtitle-color: var(--black) !important; /* dark text color */
-    --ts-menu-action-color: var(--black) !important;
+    --tsv-font-subtitle-color: var(--white) !important; /* dark text color */
+    --ts-menu-action-color: var(--white) !important;
     --permissions-card: var(--arctic1) !important;
     --transparent: transparent !important;
     --tabs-colors: var(--arctic) !important;
-    --tabs-active: var(--purple1) !important;
+    --tabs-active: var(--green1) !important;
     --title: var(--arctic) !important;
     --search: var(--transparent) !important;
     --toggle: var(--pastel) !important;
@@ -59,9 +63,6 @@
     --headerblur: blur(20px) !important;
 
 }
-
-
-
 
 /* modifications */
 :root {
@@ -76,21 +77,19 @@
     --serverstab-width: 45% !important; /* 95% default */
     --serverstab-height: 40px !important; /* 22px default */
     --tsv-tcbc: var(--red) !important; /* tabs close button color */
-    --hard-shadow: 0px 0px 7px 1px #2e2e2f20 !important; /* shadows */
-    --soft-shadow: 0px 0px 10px 1px #2e2e2f20 !important; /* shadows */
-    --channel-shadow: 0px 2px 5px 1px #2e2e2f20 !important; /* channels shadows */
-    --menu-shadow: 0px 0px 10px 1px #02020240 !important; /* menu shadows */
+    --hard-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* shadows */
+    --soft-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* shadows */
+    --channel-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* channels shadows */
+    --menu-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* menu shadows */
 
 
 
     --defaultbg: none !important; /* default background img */
-    --custombg: url(./girl_purple.png) !important; /* custom background img */
+    --custombg: none !important; /* custom background img */
     --customchatbg: flex !important; /* chat custom background img */
     --imageblur: blur(50px) !important; /* blur the chat custom background img */
 
 }
-
-
 
 
 /* DASHBOARD & SERVERS */
@@ -190,6 +189,11 @@
 /* header bottom border */
 .tsv-header {
     border-bottom: 0px !important;
+}
+
+/* remove mute buttons background */
+.tsv-central-toolbar-buttons:before {
+    background: transparent !important;
 }
 
 /* top tool bar header transparent */
@@ -411,6 +415,7 @@
     backdrop-filter: var(--tsv-blur) !important;
 }
 
+/* widgets */
 .tsv-activity-secondary .tsv-header.tsv-header-floating, .tsv-dashboard-widget .tsv-header.tsv-header-floating, .tsv-sidebar .tsv-header.tsv-header-floating {
     background: var(--headerbg) !important;
     backdrop-filter: var(--headerblur) !important;
@@ -554,6 +559,11 @@
 .tsv-sidebar .tsv-header-backdrop, .tsv-window, .main-pane-layout, .tsv-highlight.tsv-header, .tsv-highlight.tsv-header:before {
     background-image: var(--transparent) !important;
     background: var(--transparent) !important;
+}
+
+/* remove create bookmarks and folder background */
+.tsv-sidebar-header-accessories.background {
+    background: transparent !important;
 }
 
 /* notification icon color */

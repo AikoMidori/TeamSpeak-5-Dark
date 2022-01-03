@@ -23,26 +23,38 @@
         "themes": [
             {
                 "name": "Dark Theme Purple",
-                "source": "darkpurple.css",
-                "image": "darkpurple.png",
+                "source": "darkPurple.css",
+                "image": "darkPurple.png",
                 "apiVersion": 1
             },
             {
                 "name": "Dark Theme Green",
-                "source": "darkgreen.css",
-                "image": "darkgreen.png",
+                "source": "darkGreen.css",
+                "image": "darkGreen.png",
                 "apiVersion": 1
             },
             {
                 "name": "Light Theme Green",
-                "source": "lightgreen.css",
-                "image": "lightgreen.png",
+                "source": "lightGreen.css",
+                "image": "lightGreen.png",
                 "apiVersion": 1
             },
             {
                 "name": "Light Theme Purple",
-                "source": "lightpurple.css",
-                "image": "lightpurple.png",
+                "source": "lightPurple.css",
+                "image": "lightPurple.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "Light Theme Nue",
+                "source": "lightNue.css",
+                "image": "lightNue.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "Dark Theme Nue",
+                "source": "darkNue.css",
+                "image": "darkNue.png",
                 "apiVersion": 1
             }
         ]
