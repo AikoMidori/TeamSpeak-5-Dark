@@ -780,6 +780,11 @@
     background: var(--arctic1) !important;
 }
 
+/* system chat messages background */
+.ts-chat-message-system-body {
+    background: var(--transparent) !important;
+}
+
 
 
 /* SETTINGS */

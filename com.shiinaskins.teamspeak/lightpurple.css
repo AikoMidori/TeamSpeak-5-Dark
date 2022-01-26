@@ -780,6 +780,10 @@
 .ts-checkbox .ts-checkbox-inner .ts-checkbox-background {
     background: var(--arctic1) !important;
 }
+/* system chat messages background */
+.ts-chat-message-system-body {
+    background: var(--transparent) !important;
+}
 
 
 
