@@ -88,8 +88,6 @@
 
     --defaultbg: none !important; /* default background img */
     --custombg: none!important; /* custom background img */
-    --customchatbg: flex !important; /* chat custom background img */
-    --imageblur: blur(50px) !important; /* blur the chat custom background img */
 
 }
 
@@ -149,13 +147,6 @@
 .ts-background-hexes-container {
     background: var(--custombg) !important;
     background-size: cover !important;
-}
-
-/* set custom background behind the chat blurred */
-.ts-chat-container .ts-background-hexes-container {
-    filter: var(--imageblur) !important;
-    display: var(--customchatbg) !important;
-    margin-left: 20px !important;
 }
 
 /* set custom background detailed chat boxes */
@@ -909,6 +900,11 @@
     filter: blur(100px) !important;
 }
 
+/* chat message promt text */
+.ts-chat-prompt {
+    background: var(--alpine) !important;
+    box-shadow: var(--hard-shadow) !important;
+}
 
 
 
