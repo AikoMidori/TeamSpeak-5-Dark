@@ -26,7 +26,7 @@
     --tsv-chat-self-bg: var(--pastel) !important;
     --tsv-chat-deleted-bg: var(--arctic1) !important;
     --ts-select-bg: var(--arctic) !important;
-    --gradient: linear-gradient(var(--alpine) ,var(--pastel));
+    --gradient: linear-gradient(var(--alpine) ,var(--pastel)) !important;
     --green: #00A86B !important;
     --green1: var(--transparent) !important;
     --white: #ffffff !important;
@@ -61,6 +61,7 @@
     --chatinput: var(--arctic1) !important;
     --headerbg: var(--alpine) !important;
     --smallboxes: var(--alpine) !important;
+    --hovermenu: var(--pastel) !important;
 
 }
 
@@ -81,6 +82,7 @@
     --soft-shadow: 3px 3px 7px #b0b8b8, -3px -3px 7px #eefafa !important; /* shadows */
     --channel-shadow: 3px 3px 7px #b0b8b8, -3px -3px 7px #eefafa !important; /* channels shadows */
     --menu-shadow: 3px 3px 7px #b0b8b8, -3px -3px 7px #eefafa !important; /* menu shadows */
+    --inset-shadow: inset 3px 3px 7px #b0b8b8, inset -3px -3px 7px #eefafa !important; /* menu shadows */
 
 
 
@@ -90,7 +92,6 @@
     --imageblur: blur(50px) !important; /* blur the chat custom background img */
 
 }
-
 
 /* DASHBOARD & SERVERS */
 #ts-app-loading-overlay {
@@ -417,15 +418,14 @@
 
 /* chatbox container content search */
 .ts-chat-input-container-content {
-    background: var(--transparent) !important;
+    background: var(--pastel) !important;
 }
 
 /* chatbox size + chatbox input */
 .ts-chat-input-container-content .ts-chat-input-container-content-inner {
-    box-shadow: var(--hard-shadow) !important;
+    box-shadow: var(--inset-shadow) !important;
     border-radius: var(--tsv-border-radius) !important;
     background: var(--chatinput) !important;
-    backdrop-filter: var(--tsv-blur) !important;
 }
 
 .tsv-activity-secondary .tsv-header.tsv-header-floating, .tsv-dashboard-widget .tsv-header.tsv-header-floating, .tsv-sidebar .tsv-header.tsv-header-floating {
@@ -499,15 +499,26 @@
     box-shadow: none !important;
 }
 
+/* navigationbar header padding for images */
+.ts-server-icon-root.standalone .ts-btn-row[data-v-2bdbdb4a] {
+    margin-bottom: 10px !important;
+}
+
+/* navigationbar header padding */
+.navigationRow.ts-simple-card {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
 /* navigationbar permissions search */
 .tsv-bar.tsv-navigation-bar .ts-text-input-box-inner.hideDisclosure .ts-input {
     background: var(--arctic) !important;
-    box-shadow: var(--hard-shadow) !important;
 }
 
 /* create channel text input */
 .ts-create-channel-details-actual .ts-text-input-box-inner.hideDisclosure .ts-input {
-    background: var(--green) !important;
+    background: var(--pastel) !important;
+    box-shadow: var(--inset-shadow) !important;
 }
 
 /* create channel buttons */
@@ -549,7 +560,6 @@
     border: 0px !important;
     border-radius: var(--tsv-border-radius) !important;
 }
-
 
 
 
@@ -608,6 +618,7 @@
 /* cearte new tab/server icons background */
 .tsv-sidebar-header-accessories.background {
     background: var(--smallboxes) !important;
+    margin-top: 10px !important;
 }
 
 /* sidebar picker background */
@@ -643,12 +654,12 @@
 .ts-servertree-sidebar-overlay {
     box-shadow: var(--hard-shadow) !important;
     border-bottom: 1px solid var(--tsv-tint) !important;
+    background: var(--voicemenu) !important;
 }
 
 /* rework active talking users menu background */
 .ts-servertree-sidebar-overlay .ts-server-tree-item-root {
     background: var(--voicemenu) !important;
-    backdrop-filter: var(--tsv-blur) !important;
 }
 
 /* repositioned the server tabs */
@@ -682,6 +693,7 @@
     width: var(--serverstab-width) !important;
     height: var(--serverstab-height) !important;
     margin-left: 10px !important;
+    margin-bottom: 5px !important;
     display: inline-flex !important;
     background: var(--tabs-colors) !important;
     border-radius: var(--tsv-radius) !important;
@@ -736,12 +748,23 @@
 
 /* slideover container */
 .ts-activity-slideover-container {
-    background: var(--tsv-bg-blur) !important;
-    backdrop-filter: var(--tsv-blur) !important;
+    background: var(--pastel) !important;
     border-radius: var(--tsv-border-radius) !important;
     margin-top: 2% !important;
     margin-right: 2% !important;
     box-shadow: var(--menu-shadow) !important;
+}
+
+/* slideover container header overflow */
+.ts-activity-slideover-container .tsv-activity-main .tsv-header {
+    overflow: visible !important;
+    border-radius: var(--tsv-border-radius) !important;
+}
+
+/* slideover container header color */
+.tsv-header.unrelated:before {
+    background: var(--pastel) !important;
+    border-radius: var(--tsv-border-radius) !important;
 }
 
 /* removes side bar white line when resized */
@@ -816,6 +839,76 @@
 .ts-chat-message-system-body {
     background: var(--transparent) !important;
 }
+
+/* groups list repositioned */
+.ts-list-root[data-v-56bbce51] {
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+}
+
+
+
+
+/* GROUPS */
+
+/* groups discovery cards background */
+.ts-discovery-card[data-v-72e0e0b8] {
+    background: var(--pastel) !important;
+}
+
+/* groups discovery cards header background */
+.ts-discovery-card .ts-discovery-header[data-v-72e0e0b8] {
+    background: var(--pastel) !important;
+}
+
+/* groups discovery cards header background */
+.ts-discovery-card .ts-discovery-header[data-v-72e0e0b8]:before{
+    background: var(--green) !important;
+    -webkit-mask: none !important;
+    mask: none !important;
+}
+
+/* text input inset shadows */
+.ts-text-input-box {
+    box-shadow: var(--inset-shadow) !important;
+    border-radius: var(--tsv-radius) !important;
+    border-radius: 10px !important;
+}
+
+/* groups chat mention color */
+.ts-chat-room-event-detailed .ts-chat-room-event-bubble.self-mention {
+    background: var(--green) !important;
+}
+
+/* groups chat mention border color*/
+.ts-chat-room-event-detailed .ts-chat-room-event-bubble.self-mention:before {
+    border-right: 6px solid var(--green) !important;
+}
+
+/* groups chat notification */
+.ts-notification {
+    box-shadow: var(--hard-shadow) !important;
+    margin-top: 5px !important;
+    background: var(--pastel) !important;
+    border: 1px solid transparent !important;
+}
+
+/* groups chat notification border */
+.ts-notification-widget {
+    border: 1px solid transparent !important;
+}
+
+/* hover tooltips */
+.tooltip .tooltip-inner {
+    background: var(--hovermenu) !important;
+    box-shadow: var(--channel-shadow) !important;
+}
+
+/* attachment blur filter amount */ 
+.ts-chat-message-attachment-myts-file-background .background-image {
+    filter: blur(100px) !important;
+}
+
 
 
 
@@ -901,7 +994,7 @@
 
 /* context menu background */
 .ts-context-menu {
-    background-color: var(--alpine) !important;
+    background-color: var(--pastel) !important;
     border: 0px !important;
     box-shadow: var(--menu-shadow) !important;
     margin-bottom: 15px !important;
@@ -1023,6 +1116,12 @@
 /* background bulb circle voice */
 .client .tsv-icon-tint-fill {
     fill: var(--voice) !important;
+}
+
+/* background bulb & circle voice channel commander */
+.client.channel-commander .tsv-icon .tsv-icon-client-talking circle,
+.client.channel-commander .tsv-icon-tint-fill{
+    fill: red !important;
 }
 
 
