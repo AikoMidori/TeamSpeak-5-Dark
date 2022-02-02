@@ -3,7 +3,7 @@
 
 :root {
 
-    --tsv-scrollbar-bg: var(--arctic) !important;
+    --tsv-scrollbar-bg: var(--pastel) !important;
 
     --tsv-bg: var(--pastel) !important;
     --context-menu: var(--pastel) !important;
@@ -117,6 +117,14 @@
     border-radius: var(--tsv-radius) !important;
 }
 
+.ts-info-files-channel[data-v-2647e761] .graph-details>.ts-widget[data-v-2647e761] {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-top: 5px !important;
+    border: 1px solid var(--pastel) !important;
+    box-shadow: var(--hard-shadow) !important;
+} 
+
 /* client info repositioned */
 .ts-server-tree-client-info.expanded .ts-server-tree-group-icons {
     margin-bottom: 2px !important;
@@ -181,6 +189,7 @@
     background: var(--headerbg) !important;
 }
 
+/* header bottom border */
 .ts-breadcrumbs[data-v-28bd543f] {
     background: var(--alpine) !important;
     box-shadow: var(--hard-shadow) !important;
@@ -629,7 +638,7 @@
 /* rework active talking users menu shadow */
 .ts-servertree-sidebar-overlay {
     box-shadow: var(--hard-shadow) !important;
-    border-bottom: 1px solid var(--tsv-tint) !important;
+    border-bottom: 1px solid var(--pastel) !important;
     background: var(--voicemenu) !important;
 }
 
@@ -646,6 +655,7 @@
     border-radius: var(--tsv-radius) !important;
     background: var(--tabs-colors) !important;
     margin-left: 10px !important;
+    margin-bottom: 10px !important;
     box-shadow: var(--soft-shadow) !important;
 }
 
@@ -669,7 +679,7 @@
     width: var(--serverstab-width) !important;
     height: var(--serverstab-height) !important;
     margin-left: 10px !important;
-    margin-bottom: 5px !important;
+    margin-bottom: 10px !important;
     display: inline-flex !important;
     background: var(--tabs-colors) !important;
     border-radius: var(--tsv-radius) !important;
@@ -790,7 +800,8 @@
 
 /* color selection buttons */
 .tsv-segmented-control {
-    background: var(--alpine) !important;
+    background: var(--pastel) !important;
+    box-shadow: var(--hard-shadow) !important;
 }
 
 /* create button opacity permissions cards header background */
@@ -815,8 +826,16 @@
 
 /* groups list repositioned */
 .ts-list-root[data-v-56bbce51] {
+    width: 93% !important;
     margin-top: 10px !important;
     margin-left: 10px !important;
+    margin-bottom: 10px !important;
+    box-shadow: var(--hard-shadow) !important;
+    border-radius: 10px !important;
+    /* min-width: 200px; */
+    /* max-width: 280px; */
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
 }
 
 
@@ -1091,17 +1110,86 @@
     fill: var(--voice) !important;
 }
 
-/* background bulb & circle voice channel commander */
-.client.channel-commander .tsv-icon .tsv-icon-client-talking circle,
-.client.channel-commander .tsv-icon-tint-fill{
-    fill: red !important;
+/* VOICE BULB & NAME CHANNEL COMMANDER */
+
+/* name color */
+.client.channel-commander .ts-server-tree-item-leaf.client, .client.channel-commander .ts-server-tree-item-leaf.client.self {
+    color: var(--name-color) !important;
+}
+
+
+/* background bulb color voiceless */
+.client.channel-commander .tsv-icon .tsv-icon-client-voiceless circle, .client.channel-commander .tsv-icon .tsv-icon-client-voiceless ellipse {
+    fill: var(--tsv-client-commander-talking--gradient-stop) !important;
+}
+
+/* background bulb color voice */
+.client.channel-commander .tsv-icon .tsv-icon-client-detailed-talking .tsv-icon-tint-fill {
+    fill: var(--tsv-client-commander-talking--gradient-start) !important;
+}
+
+/* background bulb circle voiceless */
+.client.channel-commander .tsv-icon .tsv-icon-client-normal circle {
+    fill: var(--tsv-client-commander-talking--gradient-stop) !important;
+}
+
+/* background bulb circle color voice */
+.client.channel-commander .tsv-icon .tsv-icon-client-talking circle {
+    fill: var(--tsv-client-commander-talking--gradient-start) !important;
+}
+
+/* background bulb circle voice */
+.client.channel-commander .tsv-icon-tint-fill {
+    fill: var(--tsv-client-commander-talking--gradient-stop) !important;
 }
 
 
 
 
+
+
+
+
+/* VOICE BULB & NAME CHANNEL COMMANDER */
+
+/* name color */
+.ts-server-tree-item-leaf.client, .ts-server-tree-item-leaf.client.self {
+    color: var(--name-color) !important;
+}
+
+
+/* background bulb color voiceless */
+.client-channel-commander .tsv-icon .tsv-icon-client-voiceless circle, .tsv-icon .tsv-icon-client-voiceless ellipse {
+    fill: var(--voice1) !important;
+}
+
+/* background bulb color voice */
+.client-channel-commander .tsv-icon .tsv-icon-client-detailed-talking .tsv-icon-tint-fill {
+    fill: var(--voice) !important;
+}
+
+/* background bulb circle voiceless */
+.client-channel-commander .tsv-icon .tsv-icon-client-normal circle {
+    fill: var(--voice1) !important;
+}
+
+/* background bulb circle color voice */
+.client-channel-commander .tsv-icon .tsv-icon-client-talking circle {
+    fill: var(--voice) !important;
+}
+
+/* background bulb circle voice */
+.client-channel-commander .client .tsv-icon-tint-fill {
+    fill: var(--voice) !important;
+}
+
+
 /* SCROLLBAR */
 /* scrollbar color */
 ::-webkit-scrollbar-thumb {
-    background-color: var(--tsv-scrollbar-bg) !important;
+    background: var(--tsv-scrollbar-bg) !important;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--pastel) !important;
 }
