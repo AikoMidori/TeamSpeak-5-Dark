@@ -481,7 +481,8 @@
 /* remove overlapping shadows and colors */
 .ts-text-input-box-inner.hideDisclosure .ts-input {
     background: var(--pastel) !important;
-    box-shadow: none !important;
+    box-shadow: var(--inset-shadow) !important;
+    border-radius: var(--tsv-radius) !important;
 }
 
 /* navigationbar header padding for images */
@@ -846,6 +847,7 @@
 /* groups discovery cards background */
 .ts-discovery-card[data-v-72e0e0b8] {
     background: var(--pastel) !important;
+    box-shadow: var(--hard-shadow) !important;
 }
 
 /* groups discovery cards header background */
@@ -1031,11 +1033,6 @@
     margin-left: -10px !important;
 }
 
-/* incease avatar settins banner blur */
-.tsv-detail-info-avatar-banner {
-    filter: var(--tsv-blur) !important;
-}
-
 /* change small box colors */
 .ts-user-style .ts-user-style-cards .ts-user-style-card {
     background: var(--tabs-colors) !important;
@@ -1118,9 +1115,9 @@
 }
 
 
-/* background bulb color voiceless */
-.client.channel-commander .tsv-icon .tsv-icon-client-voiceless circle, .client.channel-commander .tsv-icon .tsv-icon-client-voiceless ellipse {
-    fill: var(--tsv-client-commander-talking--gradient-stop) !important;
+/* background bulb circle color voiceless */
+.client.channel-commander .tsv-icon .tsv-icon-client-voiceless circle, .tsv-icon .tsv-icon-client-voiceless ellipse {
+    fill: red !important;
 }
 
 /* background bulb color voice */
@@ -1130,7 +1127,7 @@
 
 /* background bulb circle voiceless */
 .client.channel-commander .tsv-icon .tsv-icon-client-normal circle {
-    fill: var(--tsv-client-commander-talking--gradient-stop) !important;
+    fill: var(--voice1) !important;
 }
 
 /* background bulb circle color voice */
@@ -1140,47 +1137,7 @@
 
 /* background bulb circle voice */
 .client.channel-commander .tsv-icon-tint-fill {
-    fill: var(--tsv-client-commander-talking--gradient-stop) !important;
-}
-
-
-
-
-
-
-
-
-/* VOICE BULB & NAME CHANNEL COMMANDER */
-
-/* name color */
-.ts-server-tree-item-leaf.client, .ts-server-tree-item-leaf.client.self {
-    color: var(--name-color) !important;
-}
-
-
-/* background bulb color voiceless */
-.client-channel-commander .tsv-icon .tsv-icon-client-voiceless circle, .tsv-icon .tsv-icon-client-voiceless ellipse {
-    fill: var(--voice1) !important;
-}
-
-/* background bulb color voice */
-.client-channel-commander .tsv-icon .tsv-icon-client-detailed-talking .tsv-icon-tint-fill {
-    fill: var(--voice) !important;
-}
-
-/* background bulb circle voiceless */
-.client-channel-commander .tsv-icon .tsv-icon-client-normal circle {
-    fill: var(--voice1) !important;
-}
-
-/* background bulb circle color voice */
-.client-channel-commander .tsv-icon .tsv-icon-client-talking circle {
-    fill: var(--voice) !important;
-}
-
-/* background bulb circle voice */
-.client-channel-commander .client .tsv-icon-tint-fill {
-    fill: var(--voice) !important;
+    fill: var(--tsv-client-commander-talking--gradient-start) !important;
 }
 
 
