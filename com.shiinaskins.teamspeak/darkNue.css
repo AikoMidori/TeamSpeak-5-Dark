@@ -396,10 +396,11 @@ path.tsv-icon-folder-fill {
 }
 
 /* avatar view close button hover */
-.ts-lightbox .ts-lightbox-content-platter .ts-lightbox-content-platter-overlay .ts-lightbox-closebox[data-v-5fb73f40]:hover {
-    box-shadow: var(--soft-shadow) !important;
+.ts-lightbox .ts-lightbox-content-platter .ts-lightbox-content-platter-overlay .ts-lightbox-closebox[data-v-5fb73f40]:active {
+    box-shadow: var(--inset-shadow) !important;
     background: var(--tsv-tcbc) !important;
 }
+
 
 /* remove gradient avatar view bottom info and center text */
 .ts-lightbox .ts-lightbox-content-platter .ts-lightbox-content-platter-overlay .ts-lightbox-content-platter-overlay-text[data-v-5fb73f40]{
@@ -853,8 +854,8 @@ path.tsv-icon-folder-fill {
     box-shadow: var(--hard-shadow) !important;
 }
 
-/* background tab close active color */
-.tsv-activity-group-list .tsv-button-plain:active {
+/* background tab close pressed color */
+.tsv-activity-group-list .tsv-button-plain:active{
     background: var(--tsv-tcbc) !important;
     border-radius: 20px !important;
     box-shadow: var(--inset-shadow) !important;
