@@ -60,6 +60,31 @@
 
 }
 
+/* modifications */
+:root {
+
+    --tsv-separation-border-width: 1px !important; /* draggable border width */
+    --tsv-radius: 6px !important; /* custom radius */
+    --tsv-border-radius: 6px !important; /* other borders */
+    --icon-width: 100% !important; /* 10%  default */
+    --bookmarkstab-width: 45% !important; /* 95% default */
+    --bookmarkstab-height: 40px !important; /* 22px default */
+    --serverstab-width: 45% !important; /* 95% default */
+    --serverstab-height: 40px !important; /* 22px default */
+    --tsv-tcbc: var(--pastel) !important; /* tabs close button color */
+    --hard-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* shadows */
+    --soft-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* shadows */
+    --channel-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* channels shadows */
+    --menu-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* menu shadows */
+    --text-shadow: 1px 1px 7px black, -1px -1px 7px  #4b4b4b !important; /* menu shadows */
+    --inset-shadow: inset 2px 2px 5px #212122, inset -2px -2px 5px #3b3b3c !important; /* menu shadows */
+
+
+
+    --defaultbg: none !important; /* default background img */
+    --custombg: none !important; /* custom background img */
+
+}
 
 /* ---------------------------------------- TEST SETTINGS ---------------------------------------- */
 
@@ -68,7 +93,7 @@
 .tsv-text-truncate {
     text-shadow: var(--text-shadow) !important;
     color: var(--white) !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
 }
 
 path.tsv-icon-base-fill {
@@ -127,7 +152,7 @@ path.tsv-icon-folder-fill {
     background: var(--pastel) !important;
     box-shadow: var(--hard-shadow) !important;
     margin-left: 10px !important;
-    width: 92% !important;
+    width: 88% !important;
     border-radius: 10px !important;
     z-index: 5 !important;
     position: absolute !important;
@@ -163,31 +188,6 @@ path.tsv-icon-folder-fill {
 
 
 
-/* modifications */
-:root {
-
-    --tsv-separation-border-width: 1px !important; /* draggable border width */
-    --tsv-radius: 6px !important; /* custom radius */
-    --tsv-border-radius: 6px !important; /* other borders */
-    --icon-width: 100% !important; /* 10%  default */
-    --bookmarkstab-width: 45% !important; /* 95% default */
-    --bookmarkstab-height: 40px !important; /* 22px default */
-    --serverstab-width: 45% !important; /* 95% default */
-    --serverstab-height: 40px !important; /* 22px default */
-    --tsv-tcbc: var(--pastel) !important; /* tabs close button color */
-    --hard-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* shadows */
-    --soft-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* shadows */
-    --channel-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* channels shadows */
-    --menu-shadow: 3px 3px 7px #212122, -3px -3px 7px #3b3b3c !important; /* menu shadows */
-    --text-shadow: 1px 1px 7px black, -1px -1px 7px  #4b4b4b !important; /* menu shadows */
-    --inset-shadow: inset 2px 2px 5px #212122, inset -2px -2px 5px #3b3b3c !important; /* menu shadows */
-
-
-
-    --defaultbg: none !important; /* default background img */
-    --custombg: none !important; /* custom background img */
-
-}
 
 /* DASHBOARD & SERVERS */
 #ts-app-loading-overlay {
@@ -234,7 +234,27 @@ path.tsv-icon-folder-fill {
 
 /* client info repositioned */
 .ts-server-tree-client-info.expanded .ts-server-tree-group-icons {
-    margin-bottom: 2px !important;
+    margin-bottom: 1px !important;
+}
+
+/* client info repositioned */
+.ts-server-tree-client-info.expanded:not(.compact) .ts-server-tree-group-icons {
+    margin-bottom: 1px !important;
+}
+
+/* client info repositioned */
+.ts-server-tree-item-leaf.client:not.ts-server-tree-item-text {
+    margin-top: 1px !important;
+}
+
+.ts-server-tree-item-leaf.client .ts-server-tree-item-text {
+    margin-top: -2px !important;
+}
+
+/* client team tag color */
+.ts-server-tree-item-groups span {
+    background: var(--tsv-tint) !important;
+    border-radius: 4px !important;
 }
 
 .ts-server-tree-item-leaf.client.compact {
@@ -356,6 +376,8 @@ path.tsv-icon-folder-fill {
     backdrop-filter: none !important;
     background: var(--pastel) !important;
     border-radius: 0px !important;
+    top: 0 !important;
+    height: 100% !important;
 }
 
 /* remove blur background color avatar view */
@@ -379,6 +401,7 @@ path.tsv-icon-folder-fill {
 .ts-lightbox .ts-lightbox-content-platter .ts-lightbox-content-platter-inner.image img[data-v-5fb73f40] {
     border-radius: 10px !important;
     max-width: 95% !important;
+    max-height: 95% !important;
     border: 5px solid var(--pastel) !important;
     box-shadow: var(--hard-shadow) !important;
     object-fit: cover !important;
@@ -753,6 +776,8 @@ path.tsv-icon-folder-fill {
     box-shadow: var(--hard-shadow) !important;
     border-bottom: 1px solid var(--pastel) !important;
     background: var(--voicemenu) !important;
+    z-index: 10 !important;
+    width: 88% !important;
 }
 
 /* rework active talking users menu background */
@@ -1223,6 +1248,8 @@ hr {
 /* change small box colors */
 .ts-user-style .ts-user-style-cards .ts-user-style-card {
     background: var(--tabs-colors) !important;
+    box-shadow: var(--hard-shadow) !important;
+    margin: 10px !important;
 }
 
 /* remove settings element backgrounds (change size) */
