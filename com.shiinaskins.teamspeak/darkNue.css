@@ -135,7 +135,7 @@ path.tsv-icon-folder-fill {
 
 .tsv-settings-categories .tsv-tabs-slim .tsv-bar-item:first-child::before {
     font-size: 15px !important;
-    content: "Nue Version 1.2" !important;
+    content: "Nue Version 1.3" !important;
     color: var(--green) !important;
     font-weight: 800 !important;
     text-shadow: var(--hard-shadow) !important;
@@ -278,6 +278,31 @@ path.tsv-icon-folder-fill {
     margin-top: 8px !important;
     margin-bottom: 8px !important;
     margin-right: 10px !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* remove chat boxes arrow */
+.ts-chat-room-event-detailed .ts-chat-room-event-bubble:before {
+    border: 0px !important;
+}
+
+/* set custom background for chat panel info */
+.tsv-chat-room-info .tsv-chat-room-info-buttons:not(.tsv-is-destructive) {
+    border-radius: var(--tsv-radius) !important;
+    padding: 5px !important;
+}
+
+/* change chat message option hover box */
+.ts-chat-quick-actions:before {
+    background-color: var(--pastel) !important;
+    border: 1px solid var(--pastel) !important;
+    box-shadow: var(--hard-shadow) !important;
+    border-radius: var(--tsv-radius) !important;
+}
+
+/* server and other widget panels */
+.tsv-view .chat-room-moderation .ts-widget.full, .tsv-dashboard-widget.full {
+    box-shadow: var(--hard-shadow);
 }
 
 /* minimum width for timespamp in chat */
@@ -500,6 +525,7 @@ path.tsv-icon-folder-fill {
 /* self status footer */
 .tsv-footer:before {
     background: var(--pastel) !important;
+    border-top: 1px solid var(--pastel) !important;
 }
 
 /* footer color */
@@ -1058,6 +1084,11 @@ path.tsv-icon-folder-fill {
     border: 1px solid transparent !important;
 }
 
+/* groups chat notification */
+.ts-notification:before {
+    background: var(--pastel) !important;
+}
+
 /* groups chat notification border */
 .ts-notification-widget {
     border: 1px solid transparent !important;
@@ -1119,6 +1150,7 @@ path.tsv-icon-folder-fill {
     border-radius: var(--tsv-border-radius) !important;
     height: 60px !important;
     width: 30% !important;
+    box-shadow: var(--hard-shadow) !important;
 }
 
 /* settings dropdown effect fix */
@@ -1202,6 +1234,7 @@ hr {
 /* create channel and other menu background colors */
 .ts-server-connection-stats-menu, .ts-server-events-title, .ts-presence-menu, .ts-create-channel-menu {
     background: var(--pastel) !important;
+    border-radius: var(--tsv-radius) !important;
 }
 
 /* toggle background */
@@ -1257,6 +1290,11 @@ hr {
     background: var(--pastel) !important;
 }
 
+/* remove settings element backgrounds (change size)*/
+.tsv-settings-window-scale-preview:after {
+    background: transparent !important;
+}
+
 /* remove background icon channel */
 .tsv-icon-channel-bg-fill {
     background: var(--pastel) !important;
@@ -1281,9 +1319,21 @@ hr {
     display: none !important;
 }
 
+
+/* BUTTONS */
+
+/* tinted buttons */
+.tsv-button-tinted {
+    padding: 10px !important;
+    border-radius: var(--tsv-radius) !important;
+    box-shadow: var(--hard-shadow) !important;
+}
+
 /* small +/- button colors */
 .tsv-number-picker .tsv-number-picker-button {
     background: var(--title) !important;
+    border-radius: var(--tsv-radius) !important;
+    box-shadow: var(--hard-shadow);
 }
 
 
